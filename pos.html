@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --blue: #3b82f6
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 30px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .font-sans {
+            font-family: 'Poppins', sans-serif
+        }
+
+        .custom-radio {
+            position: relative;
+            display: inline-block;
+        }
+
+        .custom-radio>input[type="radio"] {
+            position: absolute;
+            visibility: hidden;
+            top: 0px;
+            width: 0.5px;
+            height: 0.5px;
+        }
+
+        .custom-radio>label {
+            background: white;
+            display: inline-block;
+            border: 1px solid #d1d5db;
+            color: #d1d5db;
+            cursor: pointer;
+        }
+
+        .custom-radio>input:checked+label,
+        .custom-radio>label:hover {
+            border-color: var(--blue);
+            color: var(--blue);
+        }
+
+        .pos_mobile-height {
+            height: 80vh
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body class="overflow-y-hidden font-sans">
+    <div class="min-h-screen bg-gray-100 grid lg:grid-cols-2 grid-cols-1">
+        <div class="h-screen w-full fixed z-10 top-0 bottom-0 left-0 bg-black bg-opacity-30 lg:hidden">
+        </div>
+        <div
+            class="h-4/5 rounded-t-3xl lg:rounded-none lg:h-screen overflow-y-auto px-4 py-5 fixed bottom-0 left-0 right-0 z-20 lg:relative bg-white shadow-2xl border-r border-gray-300">
+            <div class="max-w-xl mx-auto">
+                <!-- customer search start -->
+                <div class="py-4 border-b border-gray-100 flex justify-content-end items-center">
+                    <div class="w-6/12 mr-auto">
+                        <div class="relative">
+                            <svg width="20" height="20" fill="currentColor"
+                                class="absolute left-3 top-1/2 transform -translate-y-1/2 text-blue-400">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" />
+                            </svg>
+                            <input
+                                class="focus:border-light-blue-500 bg-transparent focus:ring-1 focus:ring-light-blue-500 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-300 rounded-md py-2 pl-10"
+                                type="text" aria-label="Search products ..." placeholder="Search Customer ..." />
+                        </div>
+                    </div>
+                    <button class="mr-5">
+                        <img src="./img/icons/barcode_scan.svg" class="w-5 h-auto" alt="scan bar code">
+                    </button>
+                    <span class="mr-2 text-xs text-gray-500">Cart</span>
+                    <span class="w-6 h-6 rounded-md text-white flex text-xs justify-center items-center bg-green-500">
+                        4
+                    </span>
+                </div>
+                <!-- customer search end -->
+                <!-- clear table start -->
+                <div class="py-4 border-b border-gray-100 flex justify-end">
+                    <button
+                        class="flex items-center w-auto p-3 text-sm justify-center rounded-md border text-blue-400 border-blue-400 hover:text-blue-600 hover:border-blue-600 shadow-lg"
+                        type="button">Clear All</button>
+                    </button>
+                </div>
+                <!-- clear table end -->
+                <!--product table start -->
+                <div class="border border-gray-100 text-xs rounded-lg my-4 overflow-hidden">
+                    <!-- row start -->
+                    <div class="p-4 border-b border-gray-100 flex items-center justify-end">
+                        <div class="w-20 flex justify-between mr-auto items-center">
+                            <button
+                                class="flex items-center w-3 h-3 p-3 text-sm bg-gray-300 justify-center rounded-md border text-white hover:bg-gray-600 shadow-lg"
+                                type="button">-</button>
+                            <span class="mx-2">
+                                2
+                            </span>
+                            <button
+                                class="flex items-center w-3 h-3 p-3 text-sm bg-green-500 justify-center rounded-md border text-white hover:bg-green-800 shadow-lg"
+                                type="button">+</button>
+                        </div>
+                        <div class="flex-grow whitespace-nowrap overflow-ellipsis overflow-x-hidden px-2">
+                            Gray T-shirt
+                        </div>
+                        <div class="w-4/12 flex flex-col-reverse md:flex-row justify-between items-end md:items-center">
+                            <div class="w-full flex items-center md:w-6/12">
+                                <input type="number" placeholder="Discount"
+                                    class="focus:border-light-blue-500 bg-transparent focus:ring-1 focus:ring-light-blue-500 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-300 rounded-md p-2">
+                                <span class="ml-2 hidden md:inline">%</span>
+                            </div>
+                            <span class="text-gray-700 font-bold inline-block mb-3 md:mb-0">
+                                £ 25.00
+                            </span>
+                        </div>
+                        <button class="ml-5 w-auto">
+                            <i class="far fa-trash-alt fa-1x"></i>
+                        </button>
+                    </div>
+                    <!-- row ended -->
+                    <!-- row start -->
+                    <div class="p-4 border-b border-gray-100 flex items-center justify-end">
+                        <div class="w-20 flex justify-between mr-auto items-center">
+                            <button
+                                class="flex items-center w-3 h-3 p-3 text-sm bg-gray-300 justify-center rounded-md border text-white hover:bg-gray-600 shadow-lg"
+                                type="button">-</button>
+                            <span class="mx-2">
+                                2
+                            </span>
+                            <button
+                                class="flex items-center w-3 h-3 p-3 text-sm bg-green-500 justify-center rounded-md border text-white hover:bg-green-800 shadow-lg"
+                                type="button">+</button>
+                        </div>
+                        <div class="flex-grow whitespace-nowrap overflow-ellipsis overflow-x-hidden px-2">
+                            Red T-shirt
+                        </div>
+                        <div class="w-4/12 flex flex-col-reverse md:flex-row justify-between items-end md:items-center">
+                            <div class="w-full flex items-center md:w-6/12">
+                                <input type="number" placeholder="Discount"
+                                    class="focus:border-light-blue-500 bg-transparent focus:ring-1 focus:ring-light-blue-500 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-300 rounded-md p-2">
+                                <span class="ml-2 hidden md:inline">%</span>
+                            </div>
+                            <span class="text-gray-700 font-bold inline-block mb-3 md:mb-0">
+                                £ 39.00
+                            </span>
+                        </div>
+                        <button class="ml-5 w-auto">
+                            <i class="far fa-trash-alt fa-1x"></i>
+                        </button>
+                    </div>
+                    <!-- row ended -->
+                    <!-- row start -->
+                    <div class="p-4 border-b border-gray-100 flex items-center justify-end">
+                        <div class="w-20 flex justify-between mr-auto items-center">
+                            <button
+                                class="flex items-center w-3 h-3 p-3 text-sm bg-gray-300 justify-center rounded-md border text-white hover:bg-gray-600 shadow-lg"
+                                type="button">-</button>
+                            <span class="mx-2">
+                                6
+                            </span>
+                            <button
+                                class="flex items-center w-3 h-3 p-3 text-sm bg-green-500 justify-center rounded-md border text-white hover:bg-green-800 shadow-lg"
+                                type="button">+</button>
+                        </div>
+                        <div class="flex-grow whitespace-nowrap overflow-ellipsis overflow-x-hidden px-2">
+                            Running Treadmill
+                        </div>
+                        <div class="w-4/12 flex flex-col-reverse md:flex-row justify-between items-end md:items-center">
+                            <div class="w-full flex items-center md:w-6/12">
+                                <input type="number" placeholder="Discount"
+                                    class="focus:border-light-blue-500 bg-transparent focus:ring-1 focus:ring-light-blue-500 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-300 rounded-md p-2">
+                                <span class="ml-2 hidden md:inline">%</span>
+                            </div>
+                            <span class="text-gray-700 font-bold inline-block mb-3 md:mb-0">
+                                £ 450.00
+                            </span>
+                        </div>
+                        <button class="ml-5 w-auto">
+                            <i class="far fa-trash-alt fa-1x"></i>
+                        </button>
+                    </div>
+                    <!-- row ended -->
+                    <!-- row start -->
+                    <div class="p-4 flex items-center justify-end">
+                        <div class="w-20 flex justify-between mr-auto items-center">
+                            <button
+                                class="flex items-center w-3 h-3 p-3 text-sm bg-gray-300 justify-center rounded-md border text-white hover:bg-gray-600 shadow-lg"
+                                type="button">-</button>
+                            <span class="mx-2">
+                                1
+                            </span>
+                            <button
+                                class="flex items-center w-3 h-3 p-3 text-sm bg-green-500 justify-center rounded-md border text-white hover:bg-green-800 shadow-lg"
+                                type="button">+</button>
+                        </div>
+                        <div class="flex-grow whitespace-nowrap overflow-ellipsis overflow-x-hidden px-2">
+                            Fit 4 Home
+                        </div>
+                        <div class="w-4/12 flex flex-col-reverse md:flex-row justify-between items-end md:items-center">
+                            <div class="w-full flex items-center md:w-6/12">
+                                <input type="number" placeholder="Discount"
+                                    class="focus:border-light-blue-500 bg-transparent focus:ring-1 focus:ring-light-blue-500 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-300 rounded-md p-2">
+                                <span class="ml-2 hidden md:inline">%</span>
+                            </div>
+                            <span class="text-gray-700 font-bold inline-block mb-3 md:mb-0">
+                                £ 1,899.00
+                            </span>
+                        </div>
+                        <button class="ml-5 w-auto">
+                            <i class="far fa-trash-alt fa-1x"></i>
+                        </button>
+                    </div>
+                    <!-- row ended -->
+                </div>
+                <!-- product table end -->
+                <div class="p-4 border-b border-gray-100 flex justify-between items-center">
+                    <span class="text-xs text-gray-500">Subtotal (4 items)</span>
+                    <span class="text-sm">£3,899.00</span>
+                </div>
+                <div class="p-4 border-b border-gray-100 flex justify-between items-center">
+                    <span class="text-xs text-gray-500">Order Discount</span>
+                    <div class="flex items-center w-24">
+                        <input type="number" placeholder="Discount"
+                            class="focus:border-light-blue-500 bg-transparent focus:ring-1 focus:ring-light-blue-500 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-300 rounded-md p-2">
+                        <span class="ml-2">%</span>
+                    </div>
+                </div>
+                <div class="p-4 border-b border-gray-100 flex justify-between items-center">
+                    <span class="text-xs text-gray-500">Discount Total</span>
+                    <span class="text-sm">£29.00</span>
+                </div>
+                <div class="p-4 flex justify-between items-center">
+                    <span class="text-xs uppercase text-gray-500">Total price</span>
+                    <span class="text-lg font-bold">£6,329.00</span>
+                </div>
+                <div class="p-4 flex justify-center">
+                    <button
+                        class="flex items-center w-auto p-3 text-sm bg-green-500 justify-center rounded-md border text-white hover:bg-green-800 shadow-lg"
+                        type="button">PROCEED TO PAYMENT</button>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <aside class="w-full py-4 bg-white shadow-xl">
+                <div class="flex justify-between items-center mx-auto max-w-xl px-4">
+                    <button id="prevFilter" class="text-gray-300 outline-none">
+                        <i class="fas fa-chevron-left mr-2"></i>
+                    </button>
+                    <div class="overflow-x-hidden">
+                        <div class="owl-carousel owl-theme">
+                            <div class="custom-radio">
+                                <input type="radio" name="category" value="all" id="filter1">
+                                <label for="filter1" class="text-xs p-3 rounded-md">All Categories</label>
+                            </div>
+                            <div class="custom-radio">
+                                <input type="radio" name="category" value="fruits" id="filter2">
+                                <label for="filter2" class="text-xs p-3 rounded-md">Fruits</label>
+                            </div>
+                            <div class="custom-radio">
+                                <input type="radio" name="category" value="drinks" id="filter3">
+                                <label for="filter3" class="text-xs p-3 rounded-md">Drinks</label>
+                            </div>
+                            <div class="custom-radio">
+                                <input type="radio" name="category" value="clothing" id="filter4">
+                                <label for="filter4" class="text-xs p-3 rounded-md">Clothing</label>
+                            </div>
+                            <div class="custom-radio">
+                                <input type="radio" name="category" value="yoga" id="filter5">
+                                <label for="filter5" class="text-xs p-3 rounded-md">Yoga</label>
+                            </div>
+                            <div class="custom-radio">
+                                <input type="radio" name="category" value="gym" id="filter6">
+                                <label for="filter6" class="text-xs p-3 rounded-md">Gym</label>
+                            </div>
+                            <div class="custom-radio">
+                                <input type="radio" name="category" value="clothing" id="filter4">
+                                <label for="filter4" class="text-xs p-3 rounded-md">Clothing</label>
+                            </div>
+                            <div class="custom-radio">
+                                <input type="radio" name="category" value="clothing" id="filter4">
+                                <label for="filter4" class="text-xs p-3 rounded-md">Clothing</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <button id="nextFilter" class="text-gray-300 outline-none">
+                        <i class="fas fa-chevron-right ml-2"></i>
+                    </button>
+                </div>
+            </aside>
+            <div class="mx-auto max-w-xl px-4 pb-10 h-screen overflow-y-auto">
+                <!-- search form start -->
+                <div class="my-5">
+                    <div class="relative">
+                        <svg width="20" height="20" fill="currentColor"
+                            class="absolute left-3 top-1/2 transform -translate-y-1/2 text-blue-400">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" />
+                        </svg>
+                        <input
+                            class="focus:border-light-blue-500 bg-transparent focus:ring-1 focus:ring-light-blue-500 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-300 rounded-md py-2 pl-10"
+                            type="text" aria-label="Search products ..." placeholder="Search products ..." />
+                    </div>
+                </div>
+                <!-- search form end -->
+                <!-- product list start -->
+                <div class="grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-3.5">
+                    <a href="#"
+                        class="block relative bg-white h-44 rounded-lg border overflow-y-hidden border-gray-300 hover:border-blue-500">
+                        <img src="./img/products/image 9.png" class="w-11/12 object-contain object-center h-32 m-2"
+                            alt="">
+                        <p
+                            class="text-center border-t overflow-x-hidden whitespace-nowrap overflow-ellipsis border-gray-300 text-xs capitalize p-2">
+                            Grey T-Shirt
+                        </p>
+                        <div class="absolute top-0 w-full p-2">
+                            <span class="block p-2 w-full rounded-md text-center text-xs text-white bg-red-300">
+                                Out of stock
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="block relative bg-white h-44 rounded-lg border overflow-y-hidden border-gray-300 hover:border-blue-500">
+                        <img src="./img/products/image 14.png" class="w-11/12 object-contain object-center h-32 m-2"
+                            alt="">
+                        <p
+                            class="text-center border-t overflow-x-hidden whitespace-nowrap overflow-ellipsis border-gray-300 text-xs capitalize p-2">
+                            Grey T-Shirt
+                        </p>
+                        <div class="absolute top-0 w-full p-2">
+                            <span class="block p-2 w-full rounded-md text-center text-xs text-white bg-green-300">
+                                20% Discount
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="block relative bg-white h-44 rounded-lg border overflow-y-hidden border-gray-300 hover:border-blue-500">
+                        <img src="./img/products/image 10.png" class="w-11/12 object-contain object-center h-32 m-2"
+                            alt="">
+                        <p
+                            class="text-center border-t overflow-x-hidden whitespace-nowrap overflow-ellipsis border-gray-300 text-xs capitalize p-2">
+                            Grey T-Shirt
+                        </p>
+                    </a>
+                    <a href="#"
+                        class="block relative bg-white h-44 rounded-lg border overflow-y-hidden border-gray-300 hover:border-blue-500">
+                        <img src="./img/products/image 11.png" class="w-11/12 object-contain object-center h-32 m-2"
+                            alt="">
+                        <p
+                            class="text-center border-t overflow-x-hidden whitespace-nowrap overflow-ellipsis border-gray-300 text-xs capitalize p-2">
+                            Grey T-Shirt
+                        </p>
+                    </a>
+                    <a href="#"
+                        class="block relative bg-white h-44 rounded-lg border overflow-y-hidden border-gray-300 hover:border-blue-500">
+                        <img src="./img/products/image 13.png" class="w-11/12 object-contain object-center h-32 m-2"
+                            alt="">
+                        <p
+                            class="text-center border-t overflow-x-hidden whitespace-nowrap overflow-ellipsis border-gray-300 text-xs capitalize p-2">
+                            Duplin (Hateras-Red)
+                        </p>
+                    </a>
+                    <a href="#"
+                        class="block relative bg-white h-44 rounded-lg border overflow-y-hidden border-gray-300 hover:border-blue-500">
+                        <img src="./img/products/image 6.png" class="w-11/12 object-contain object-center h-32 m-2"
+                            alt="">
+                        <p
+                            class="text-center border-t overflow-x-hidden whitespace-nowrap overflow-ellipsis border-gray-300 text-xs capitalize p-2">
+                            Red T-Shirt
+                        </p>
+                    </a>
+                    <a href="#"
+                        class="block relative bg-white h-44 rounded-lg border overflow-y-hidden border-gray-300 hover:border-blue-500">
+                        <img src="./img/products/image 7.png" class="w-11/12 object-contain object-center h-32 m-2"
+                            alt="">
+                        <p
+                            class="text-center border-t overflow-x-hidden whitespace-nowrap overflow-ellipsis border-gray-300 text-xs capitalize p-2">
+                            Barbell (5kg)
+                        </p>
+                    </a>
+                    <a href="#"
+                        class="block relative bg-white h-44 rounded-lg border overflow-y-hidden border-gray-300 hover:border-blue-500">
+                        <img src="./img/products/image 5.png" class="w-11/12 object-contain object-center h-32 m-2"
+                            alt="">
+                        <p
+                            class="text-center border-t overflow-x-hidden whitespace-nowrap overflow-ellipsis border-gray-300 text-xs capitalize p-2">
+                            Grey T-Shirt
+                        </p>
+                    </a>
+                </div>
+                <!-- product list end -->
+                <!-- stage 2 start -->
+                <div class="h-screen flex flex-col justify-between py-20">
+                    <div class="py-4">
+                        <div
+                            class="mb-4 flex justify-between bg-white rounded-md border border-gray-300 p-3 items-center">
+                            <span class="text-xs text-gray-500">Grand Total</span>
+                            <span class="text-lg font-bold text-gray-500">£ 3,600.00</span>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-3.5">
+                            <button
+                                class="flex items-center p-3 text-sm bg-white justify-center rounded-md border text-blue-400 border-blue-400 hover:text-blue-600 hover:border-blue-600 shadow-lg"
+                                type="button">CASH</button>
+                            <button
+                                class="flex items-center p-3 text-sm bg-white justify-center rounded-md border text-blue-400 border-blue-400 hover:text-blue-600 hover:border-blue-600 shadow-lg"
+                                type="button">CARD</button>
+                        </div>
+                    </div>
+                    <div class="py-4 flex justify-between items-center">
+                        <button
+                            class="flex items-center w-auto p-3 text-sm justify-center rounded-md border text-blue-400 border-blue-400 hover:text-blue-600 hover:border-blue-600 shadow-lg"
+                            type="button"><i class="fas fa-chevron-left mr-2"></i> BACK</button>
+                        <button
+                            class="flex items-center w-auto p-3 text-sm bg-blue-500 justify-center rounded-md border text-white hover:bg-blue-800 shadow-lg"
+                            type="button">COMPLETE PAYMENT</button>
+                    </div>
+                </div>
+                <!-- stage-2 end -->
+                <!-- stage 3 start -->
+                <div class="h-screen flex flex-col justify-between py-10">
+                    <div
+                        class="mx-auto w-full md:w-9/12 pt-10 pb-14 px-7 border-gray-200 border rounded-md flex flex-col items-center bg-white">
+                        <img src="./img/icons/success.svg" class="w-30 h-auto mb-8" alt="success">
+                        <p class="text-xl font-bold mb-5">Sale Complete</p>
+                        <form
+                            class="border w-full border-gray-300 rounded-md p-2 mb-3 flex justify-between items-center">
+                            <input type="text" class="outline-none" placeholder="Email invoice">
+                            <button
+                                class="flex items-center w-auto p-3 text-sm bg-blue-500 justify-center rounded-md border text-white hover:bg-blue-800 shadow-lg"
+                                type="submit">
+                                <i class="far fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <button
+                            class="flex items-center w-full p-3 text-sm bg-blue-500 justify-center rounded-md border text-white hover:bg-blue-800 shadow-lg"
+                            type="button">PRINT INVOICE</button>
+                    </div>
+                    <div class="py-4 flex justify-start items-center">
+                        <button
+                            class="flex items-center w-auto p-3 text-sm justify-center rounded-md border text-blue-400 border-blue-400 hover:text-blue-600 hover:border-blue-600 shadow-lg"
+                            type="button">
+                            <i class="fas fa-chevron-left mr-2"></i>
+                            BACK
+                        </button>
+                    </div>
+                </div>
+                <!-- stage 3 end -->
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        jQuery(function () {
+            const filterSlide = $('.owl-carousel')
+            filterSlide.owlCarousel({
+                margin: 10,
+                autoWidth: true,
+                dots: false,
+                items: 8
+            });
+            $('#nextFilter').click(function () {
+                filterSlide.trigger('next.owl.carousel');
+            })
+            $('#prevFilter').click(function () {
+                filterSlide.trigger('prev.owl.carousel');
+            })
+        })
+    </script>
+</body>
+
+</html>
