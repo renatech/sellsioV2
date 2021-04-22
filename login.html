@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+         crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./css/authentication.css">
+     <title>Login</title>
+ </head>
+
+ <body class="font-sans overflow-x-hidden">
+     <!-- backdrop start -->
+     <div class="backdrop"></div>
+     <!-- backdrop end -->
+     <div class=" max-w-5xl mx-auto p-5 z-10 relative">
+         <div class=" mb-44">
+             <img src="./img/Sellsio_logo.svg" class="w-40 h-auto" alt="sellsio_logo">
+         </div>
+         <!-- form start -->
+         <div class="max-w-md p-5 mx-auto">
+             <div class="p-1 bg-blue-800 rounded-xl form_outline relative">
+                <img src="./img/pattern.svg" class="w-auto hidden md:inline-block absolute top-16 left-full" style="height: 90%" alt="">
+                <img src="./img/pattern.svg" class="w-auto hidden md:inline-block absolute top-16 right-full" style="height: 90%;transform: rotateX(180deg)" alt="">
+                 <div class="p-5 rounded-lg text-primary-800" style="background: #77d0d1">
+                    <div class="w-48 mx-auto -mt-40 mb-8">
+                        <img src="./img/Sellsio_mascot 1.png" class="w-full" alt="" srcset="">
+                    </div>
+                     <div class="mb-8">
+                         <h1 class="text-3xl font-bold">Welcome to Sellsio</h1>
+                         <p class="text-sm">Login to your account</p>
+                     </div>
+                     <form action="" method="post">
+                         <div class="mb-5">
+                             <input type="text" id="sku" placeholder="Username"
+                                 class="w-full mb-4 rounded-lg border-2 hover:border-green-500 text-sm focus:border-green-500 bg-gray-200 outline-none h-12 p-3 placeholder-gray-500">
+                             <input type="text" id="sku" placeholder="Username"
+                                 class="w-full rounded-lg border-2 hover:border-green-500 text-sm focus:border-green-500 bg-gray-200 outline-none h-12 p-3 placeholder-gray-500">
+                         </div>
+                         <div class="flex items-center mb-5">
+                             <input id="rememberMe" type="checkbox" name="" id="">
+                             <label for="rememberMe"
+                                 class="inline-block ml-2 text-xs text-primary-700 hover:text-primary-900">Remember me</label>
+                             <a href="#" class="block ml-auto text-xs text-primary-700 hover:text-primary-900">Forgot
+                                 Password</a>
+                         </div>
+                         <div class="mb-5">
+                             <button
+                                 class="flex shadow-xl justify-center font-bold items-center rounded-lg px-3 py-3 bg-blue-600 text-white hover:bg-blue-700 w-full">
+                                 Login
+                             </button>
+                         </div>
+                         <div class="text-center text-primary-800 mb-5">
+                            First time here ? <a href="#" class="font-bold text-primary-700 hover:text-primary-900">Sign Up</a>
+                         </div>
+                     </form>
+                 </div>
+             </div>
+         </div>
+         <!-- form end -->
+     </div>
+ </body>
+
+ </html>
