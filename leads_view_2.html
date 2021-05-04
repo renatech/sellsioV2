@@ -191,7 +191,8 @@
     <!-- main start -->
     <main class="flex-grow">
       <!-- navbar start -->
-      <nav class="flex justify-end sticky z-10 top-0 items-center bg-white border-b border-blue-100 py-4 px-4 shadow-lg">
+      <nav
+        class="flex justify-end sticky z-10 top-0 items-center bg-white border-b border-blue-100 py-4 px-4 shadow-lg">
         <div class="flex items-center mr-auto text-lg">
           <!-- logo start -->
           <img src="./dist/img/Sellsio_logo.svg" alt="selsio logo" class="w-12 h-auto">
@@ -258,253 +259,73 @@
           </div>
         </div>
         <!-- body start -->
-        <div class="min-h-screen flex flex-col justify-between"> 
+        <div class="min-h-screen flex flex-col justify-between">
           <!-- table-start -->
-          <table class="table auto overflow-x-auto w-full">
-            <thead class="text-gray-600">
-              <tr class="bg-white border-b border-gray-300">
-                <th class="py-5 px-2">
-                  <label class="custom-checkbox" for="cc-all">
-                    <input type="checkbox" checked name="" id="cc-all">
-                    <span></span>
-                  </label>
-                </th>
-                <th>
-
-                </th>
-                <th class="py-5 px-2 cursor-pointer text-left">
-                  <div class="inline-flex items-center">
-                    <span class="inline-block mr-3">Lead ID</span>
-                    <span class="flex flex-col items-center">
-                      <i class="iconly-Arrow-Up-2 icbo text-gray-600"></i><span></span><i
-                        class="iconly-Arrow-Down-2 icbo text-gray-400"></i>
-                    </span>
+          <div class="grid grid-cols-6 gap-4 p-4">
+            <div class="rounded-lg bg-white border-2 border-blue-200 ">
+              <div class="p-2 border-b-2 border-blue-200 font-bold text-center text-gray-600">
+                Lead In
+              </div>
+              <div class="p-2">
+                <div class="bg-blue-2 text-center mt-8 mb-6 bg-blue-100 text-gray-600 p-2 rounded-xl">
+                  <div class="flex justify-center mb-3 -mt-7">
+                    <img src="https://wallpaperaccess.com/full/2213424.jpg" class="avatar" alt="Profile image">
                   </div>
-                </th>
-                <th class="py-5 px-2 cursor-pointer text-left">
-                  <div class="inline-flex items-center">
-                    <span class="inline-block mr-3">Lead name</span>
-                    <span class="flex flex-col items-center">
-                      <i class="iconly-Arrow-Up-2 icbo text-gray-600"></i><span></span><i
-                        class="iconly-Arrow-Down-2 icbo text-gray-400"></i>
-                    </span>
+                  <h6 class="text-blue-500 mb-3 font-bold">Caitlyn Bannister</h6>
+                  <p class="text-xs whitespace-nowrap overflow-ellipsis overflow-hidden">caitlyn_bann@outlook.com</p>
+                  <p class="text-xs">+13 12 345 5455</p>
+                </div>
+                <div class="bg-blue-2 text-center mt-8 mb-6 bg-blue-100 text-gray-600 p-2 rounded-xl">
+                  <div class="flex justify-center mb-3 -mt-7">
+                    <img src="https://wallpaperaccess.com/full/2213424.jpg" class="avatar" alt="Profile image">
                   </div>
-                </th>
-                <th class="py-5 px-2 cursor-pointer text-left">
-                  <div class="inline-flex items-center">
-                    <span class="inline-block mr-3">E-mail</span>
-                    <span class="flex flex-col items-center">
-                      <i class="iconly-Arrow-Up-2 icbo text-gray-600"></i><span></span><i
-                        class="iconly-Arrow-Down-2 icbo text-gray-400"></i>
-                    </span>
+                  <h6 class="text-blue-500 mb-3 font-bold">Raymond Pennington</h6>
+                  <p class="text-xs whitespace-nowrap overflow-ellipsis overflow-hidden">ray.penn@outlook.com</p>
+                  <p class="text-xs">+13 41 568 5966</p>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg bg-white border-2 border-blue-200 ">
+              <div class="p-2 border-b-2 border-blue-200 font-bold text-center text-gray-600">
+                Contact made
+              </div>
+              
+            </div>
+            <div class="rounded-lg bg-white border-2 border-blue-200 ">
+              <div class="p-2 border-b-2 border-blue-200 font-bold text-center text-gray-600">
+                Meeting Arranged
+              </div>
+              <div class="p-2">
+                <div class="bg-blue-2 text-center mt-8 mb-6 bg-blue-100 text-gray-600 p-2 rounded-xl">
+                  <div class="flex justify-center mb-3 -mt-7">
+                    <img src="https://wallpaperaccess.com/full/2213424.jpg" class="avatar" alt="Profile image">
                   </div>
-                </th>
-                <th class="py-5 px-2 cursor-pointer text-left">
-                  <div class="inline-flex items-center">
-                    <span class="inline-block mr-3">Phone no.</span>
-                    <span class="flex flex-col items-center">
-                      <i class="iconly-Arrow-Up-2 icbo text-gray-600"></i><span></span><i
-                        class="iconly-Arrow-Down-2 icbo text-gray-400"></i>
-                    </span>
-                  </div>
-                </th>
-                <th class="py-5 px-2 cursor-pointer text-left">
-                  <div class="inline-flex items-center">
-                    <span class="inline-block mr-3">Status</span>
-                    <span class="flex flex-col items-center">
-                      <i class="iconly-Arrow-Up-2 icbo text-gray-600"></i><span></span><i
-                        class="iconly-Arrow-Down-2 icbo text-gray-400"></i>
-                    </span>
-                  </div>
-                </th>
-                <th class="py-5 px-2 cursor-pointer text-left">
-                  <div class="inline-flex items-center">
-                    <span class="inline-block mr-3">Employee</span>
-                    <span class="flex flex-col items-center">
-                      <i class="iconly-Arrow-Up-2 icbo text-gray-600"></i><span></span><i
-                        class="iconly-Arrow-Down-2 icbo text-gray-400"></i>
-                    </span>
-                  </div>
-                </th>
-                <th class="py-5 px-2 cursor-pointer text-left">
-                  <div class="inline-flex items-center">
-                    <span class="inline-block mr-3">Created</span>
-                    <span class="flex flex-col items-center">
-                      <i class="iconly-Arrow-Up-2 icbo text-gray-600"></i><span></span><i
-                        class="iconly-Arrow-Down-2 icbo text-gray-400"></i>
-                    </span>
-                  </div>
-                </th>
-                <th>
-
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-b border-gray-300 text-gray-600">
-                <td class="py-5 px-2">
-                  <label class="custom-checkbox" for="cc-1">
-                    <input type="checkbox" checked name="" id="cc-1">
-                    <span></span>
-                  </label>
-                </td>
-                <td class="py-5 px-2">
-                  <figure class="avatar--placeholder">
-                    c b
-                  </figure>
-                </td>
-                <td class="py-5 px-2">
-                  16
-                </td>
-                <td class="py-5 px-2">
-                  Caitlyn Bannister
-                </td>
-                <td class="py-5 px-2">
-                  caitlyn_bann@outlook.com
-                </td>
-                <td class="py-5 px-2">
-                  +13 12 345 5455
-                </td>
-                <td class="py-5 px-2">
-                  <span class="inline-block border-2 border-green-500 rounded-full py-2 px-4 bg-green-100"> Lead in
-                  </span>
-                </td>
-                <td class="py-5 px-2">
-                  <a href="" class=" hover:text-blue-600 hover:underline">Zaina Blundell</a>
-                </td>
-                <td class="py-5 px-2">
-                  17 Jul, 2020 <br> 14:54
-                </td>
-                <td>
-                  <button class="text-red-500 hover:text-red-700 text-3xl">
-                    <i class="iconly-Close-Square icli"></i>
-                  </button>
-                </td>
-              </tr>
-              <tr class="border-b border-gray-300 text-gray-600">
-                <td class="py-5 px-2">
-                  <label class="custom-checkbox" for="cc-2">
-                    <input type="checkbox" checked name="" id="cc-2">
-                    <span></span>
-                  </label>
-                </td>
-                <td class="py-5 px-2">
-                  <img src="https://wallpaperaccess.com/full/2213424.jpg" class="avatar" alt="Profile image">
-                </td>
-                <td class="py-5 px-2">
-                  01564
-                </td>
-                <td class="py-5 px-2">
-                  Raymond Pennington
-                </td>
-                <td class="py-5 px-2">
-                  Raymond_Penning@gma...
-                </td>
-                <td class="py-5 px-2">
-                  +13 12 123 8973
-                </td>
-                <td class="py-5 px-2">
-                  <span class="inline-block border-2 border-green-500 rounded-full py-2 px-4 bg-green-100"> Lead in
-                  </span>
-                </td>
-                <td class="py-5 px-2">
-                  <a href="" class=" hover:text-blue-600 hover:underline">Amelia Rose O'Connor
-                  </a>
-                </td>
-                <td class="py-5 px-2">
-                  14 Sep, 2020
-                  <br> 16:52
-                </td>
-                <td>
-                  <button class="text-red-500 hover:text-red-700 text-3xl">
-                    <i class="iconly-Close-Square icli"></i>
-                  </button>
-                </td>
-              </tr>
-              <tr class="border-b border-gray-300 text-gray-600">
-                <td class="py-5 px-2">
-                  <label class="custom-checkbox" for="cc-3">
-                    <input type="checkbox" checked name="" id="cc-3">
-                    <span></span>
-                  </label>
-                </td>
-                <td class="py-5 px-2">
-                  <figure class="avatar--placeholder">
-                    x b
-                  </figure>
-                </td>
-                <td class="py-5 px-2">
-                  4564
-                </td>
-                <td class="py-5 px-2">
-                  <a href="" class="hover:text-blue-600 hover:underline"">Amelia Rose O'Connor</a>
-                </td>
-                <td class="py-5 px-2">
-                  o’connor.amelia@yahoo.com
-                </td>
-                <td class="py-5 px-2">
-                  +13 02 245 789
-                </td>
-                <td class="py-5 px-2">
-                  <span class="inline-block border-2 border-red-500 rounded-full whitespace-nowrap py-2 px-4 bg-red-100"> Needs defined
-                  </span>
-                </td>
-                <td class="py-5 px-2">
-                  <a href="" class=" hover:text-blue-600 hover:underline">Raymond Pennington
-                  </a>
-                </td>
-                <td class="py-5 px-2">
-                  22 Apr, 2021 <br> 09:22
-                </td>
-                <td>
-                  <button class="text-red-500 hover:text-red-700 text-3xl">
-                    <i class="iconly-Close-Square icli"></i>
-                  </button>
-                </td>
-              </tr>
-              <tr class="border-b border-gray-300 text-gray-600">
-                <td class="py-5 px-2">
-                  <label class="custom-checkbox" for="cc-2">
-                    <input type="checkbox" checked name="" id="cc-2">
-                    <span></span>
-                  </label>
-                </td>
-                <td class="py-5 px-2">
-                  <img src="https://wallpaperaccess.com/full/2213424.jpg" class="avatar" alt="Profile image">
-                </td>
-                <td class="py-5 px-2">
-                  565
-                </td>
-                <td class="py-5 px-2">
-                  <a href="" class=" hover:text-blue-600 hover:underline">Zaina Blundell
-                  </a>
-                </td>
-                <td class="py-5 px-2">
-                  blundellsa@coke.com
-                </td>
-                <td class="py-5 px-2">
-                  +13 55 545 4986
-                </td>
-                <td class="py-5 px-2">
-                  <span class="inline-block border-2 border-green-500 rounded-full py-2 px-4 bg-green-100"> Lead in
-                  </span>
-                </td>
-                <td class="py-5 px-2">
-                  <a href="" class=" hover:text-blue-600 hover:underline">Caitlyn Bannister
-                  </a>
-                </td>
-                <td class="py-5 px-2">
-                  14 Sep, 2020
-                  <br> 16:52
-                </td>
-                <td>
-                  <button class="text-red-500 hover:text-red-700 text-3xl">
-                    <i class="iconly-Close-Square icli"></i>
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                  <h6 class="text-blue-500 mb-3 font-bold">Amelia Rose O'Connor</h6>
+                  <p class="text-xs whitespace-nowrap overflow-ellipsis overflow-hidden">rose_amelia@outlook.com</p>
+                  <p class="text-xs">+13 12 345 5455</p>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg bg-white border-2 border-blue-200 ">
+              <div class="p-2 border-b-2 border-blue-200 font-bold text-center text-gray-600">
+                Needs defined
+              </div>
+              
+            </div>
+            <div class="rounded-lg bg-white border-2 border-blue-200 ">
+              <div class="p-2 border-b-2 border-blue-200 font-bold text-center text-gray-600">
+                Proposal Made
+              </div>
+              
+            </div>
+            <div class="rounded-lg bg-white border-2 border-blue-200 ">
+              <div class="p-2 border-b-2 border-blue-200 font-bold text-center text-gray-600">
+                Negotations Started
+              </div>
+              
+            </div>
+            
+          </div>
           <!-- table-end -->
           <!-- pagination start -->
           <div class="p-4 flex items-center justify-between">
@@ -535,9 +356,9 @@
             </div>
             <!-- result start -->
             <div class="text-gray-400">
-              10 of 14 results 
+              10 of 14 results
             </div>
-          <!-- result end -->
+            <!-- result end -->
           </div>
           <!--pagination end-->
         </div>
