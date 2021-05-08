@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/font/icomoon/style.css">
+    <link rel="stylesheet" href="./dist/font/icony/dist/css/style.css">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>New Lead::Delegate</title>
+</head>
+
+<body class="font-sans">
+    <div class="min-h-screen flex items-start bg-blue-100">
+        <!-- sidebar start -->
+        <aside class="sidebar">
+            <button class="block w-10 mb-7 menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="flex-col items-center p-3 w-full">
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Category"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Home</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Chart icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Reports</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Calendar icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Calender</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Time-Square icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Reception</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-User3 icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Staff</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" data-target="marketing" class="sidebar-dropdown">
+                        <span class="text-3xl">
+                            <i class="iconly-Discount icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Marketing</span>
+                        <span class="indicator">
+                            <i class="iconly-Arrow-Down-2 icli"></i>
+                        </span>
+                    </a>
+                    <ul class="sublink show" id="marketing">
+                        <li>
+                            <a href="#">SMS Campaign</a>
+                        </li>
+                        <li>
+                            <a href="#">E-Mail Campaign</a>
+                        </li>
+                        <li>
+                            <a href="#">Surveys</a>
+                        </li>
+                        <li>
+                            <a href="#">Automatic remainders</a>
+                        </li>
+                        <li>
+                            <a href="#">Referrals</a>
+                        </li>
+                        <li>
+                            <a href="#">Affiliates</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Graph icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Sales</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Activity icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Stock</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" data-target="finance" class="sidebar-dropdown">
+                        <span class="text-3xl">
+                            <i class="iconly-Document icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Finance</span>
+                        <span class="indicator">
+                            <i class="iconly-Arrow-Down-2 icli"></i>
+                        </span>
+                    </a>
+                    <ul class="sublink show" id='finance'>
+                        <li>
+                            <a href="#">POS</a>
+                        </li>
+                        <li>
+                            <a href="#">Expenses</a>
+                        </li>
+                        <li>
+                            <a href="#">Invoices</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="w-full block">
+                    <a href="#" data-target="client" class="sidebar-dropdown">
+                        <span class="text-3xl">
+                            <i class="iconly-Work icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Clients</span>
+                        <span class="indicator">
+                            <i class="iconly-Arrow-Down-2 icli"></i>
+                        </span>
+                    </a>
+                    <ul class="sublink show" id="client">
+                        <li>
+                            <a href="#">Leads</a>
+                        </li>
+                        <li>
+                            <a href="#">Clients</a>
+                        </li>
+                        <li>
+                            <a href="#">Lead Form</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="w-full block">
+                    <a href="#" data-target="more" class="sidebar-dropdown">
+                        <span class="text-2xl">
+                            <i class="iconly-More-Square icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">More</span>
+                        <span class="indicator">
+                            <i class="iconly-Arrow-Down-2 icli"></i>
+                        </span>
+                    </a>
+                    <ul class="sublink show" id="more">
+                        <li>
+                            <a href="#">Notes</a>
+                        </li>
+                        <li>
+                            <a href="#">Documents</a>
+                        </li>
+                        <li>
+                            <a href="#">Tags</a>
+                        </li>
+                        <li>
+                            <a href="#">Forms</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <span class="icon-tooth_2"></span>
+                        </span>
+                        <span class="inline-block mt-1 title">Teeth Charts</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- sidebar end -->
+        <!-- main start -->
+        <main class="flex-grow">
+            <!-- navbar start -->
+            <nav
+                class="flex justify-end sticky z-10 top-0 items-center bg-white border-b border-blue-100 py-4 px-4 shadow-lg">
+                <div class="flex items-center mr-auto text-lg">
+                    <!-- logo start -->
+                    <img src="./dist/img/Sellsio_logo.svg" alt="selsio logo" class="w-12 h-auto">
+                    <!-- logo end -->
+                    <a href="#" class="hover:text-blue-500">
+                        <i class="iconly-Arrow-Left icli ml-3 text-blue-600 text-2xl"></i>
+                    </a>
+                    <a href="#" class="inline-block ml-3 font-bold text-gray-500 hover:text-blue-500">Leads</a>
+                    <span class="inline-block ml-3 font-bold text-gray-500">/</span>
+                    <span class="inline-block ml-3 font-bold text-blue-600">Add new lead</span>
+
+                </div>
+                <div class=" w-60">
+                    <input placeholder="Search" type="search" name=""
+                        class="rounded-md inline-block w-full bg-blue-100 h-10 p-3 placeholder-gray-600" id="">
+                </div>
+                <button class="notification-bell active ml-4">
+                    <i class="iconly-Notification icli"></i>
+                </button>
+                <button
+                    class="rounded-md p-1 ml-4 text-white font-bold bg-blue-600 hover:bg-blue-700 text-md border-2 border-blue-900 flex items-center">
+                    <span class="icon-plus mr-2"></span>
+                    <span class="hidden lg:inline-block">Create a new...</span>
+                    <span class="inline-block lg:hidden">New</span>
+                    <span class="block rounded-r-md px-1 text-blue-700 bg-blue-300 ml-2">
+                        <i class="iconly-Arrow-Down-2 icli"></i>
+                    </span>
+                </button>
+                <span class="text-sm hidden lg:inline-block text-blue-600 font-bold ml-4">Richard Peck</span>
+                <span class="inline-block ml-4">
+                    <img src="https://wallpaperaccess.com/full/2213424.jpg" class="avatar" alt="Profile image">
+                </span>
+            </nav>
+            <!-- navbar end -->
+            <div class="flex items-center px-4 bg-blue-200">
+                <a href="./new_lead_client.html"
+                    class="py-4 inline-block text-sm font-bold border-b-4 border-transparent text-gray-500 capitalize hover:text-blue-700 mr-8">
+                    <span>Client</span>
+                </a>
+                <a href="./new_lead_organisation.html" class=" py-4 inline-block text-sm border-b-4 font-bold border-transparent text-gray-500 hover:text-blue-700 mr-8">
+                    <span>Organisation</span>
+                </a>
+                <a href="./new_lead_model.html" class="py-4 inline-block text-sm border-b-4 font-bold  border-transparent text-gray-500 mr-8 hover:text-blue-700">
+                    <span>Model</span>
+                </a>
+                <a href="#" class="py-4 inline-block text-sm border-b-4 font-bold border-blue-500 text-blue-500 hover:text-blue-700">
+                    <span>Delegate</span>
+                </a>
+            </div>
+            <section class="m-4 mx-auto max-w-3xl">
+                <div class="rounded-xl border-2 border-blue-200 p-3 bg-white mb-5">
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="flex">
+                            <div class="items-center flex">
+                                <figure
+                                    class="border-2 border-blue-100 rounded-md p-3 flex items-center justify-center">
+                                    <i class="iconly-Image-2 icbo text-6xl text-gray-400"></i>
+                                </figure>
+                                <label for="avatar-image" class="ml-3 text-sm text-blue-500 underline font-bold">
+                                    <input type="file" name="" class="hidden" id="avatar-image">
+                                    <span>Attach Photo</span>
+                                </label>
+                            </div>
+                            <div class="ml-auto w-32">
+                                <label for="title_1" class="text-gray-600 mb-2 text-sm font-bold">Title</label>
+                                <select name="" class="w-full border-2 border-gray-200 bg-gray-100 p-2 h-9 rounded-md"
+                                    id="">
+                                    <option value="mr">Mr</option>
+                                    <option value="mrs">Mrs</option>
+                                    <option value="MSc">MSc</option>
+                                    <option value="Dr">Dr</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="fullname_1" class="text-gray-600 mb-2 text-sm font-bold">Full name</label>
+                            <input type="name" name="fullname"
+                                class="form-input" id="fullname_1">
+                        </div>
+                    </div>
+                    <div class="text-sm my-3">
+                        <!-- heading start -->
+                        <div class="flex items-center mb-3">
+                            <h2 class="text-bold text-blue-500 font-bold mr-3">Profile info</h2>
+                            <div class="border-b flex-grow"></div>
+                        </div>
+                        <!--heading end-->
+                        <div class=" grid grid-cols-4 gap-3">
+                            <div class="col-start-1 col-end-3">
+                                <label for="email_1" class="text-gray-600 mb-2 text-sm font-bold">Email</label>
+                                <input type="email" name="email"
+                                    class="form-input" id="email_1">
+                            </div>
+                            <div class="col-start-3 col-end-5">
+                                <label for="address_1" class="text-gray-600 mb-2 text-sm font-bold">Address</label>
+                                <input type="text" name="address"
+                                    class="form-input" id="address_1">
+                            </div>
+                            <div class="col-start-1 col-end-3">
+                                <label for="phone_number_1" class="text-gray-600 mb-2 text-sm font-bold">Phone number</label>
+                                <input type="number" name="phone_number"
+                                    class="form-input" id="phone_number_1">
+                            </div>
+                            <div class="col-start-3 col-end-5">
+                                <label for="country_1" class="text-gray-600 mb-2 text-sm font-bold">Country</label>
+                                <input type="text" name="country"
+                                    class="form-input" id="country_1">
+                            </div>
+                            <div class="lg:col-start-1 lg:col-end-2 col-start-1 col-end-3">
+                                <label for="dob_1" class="text-gray-600 mb-2 text-sm font-bold">Date of birth</label>
+                                <input type="date" name="dob"
+                                    class="form-input" id="dob_1">
+                            </div>
+                            <div class="lg:col-start-2 lg:col-end-3 col-start-3 col-end-5">
+                                <label for="gender_1" class="text-gray-600 mb-2 text-sm font-bold">Gender</label>
+                                <select name="gender" class="form-input" id="gender_1">
+                                    <option value="">Prefer not say</option>
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
+                                    <option value="">Other</option>
+                                </select>
+                            </div>
+                            <div class="lg:col-start-3 lg:col-end-4 col-start-1 col-end-3">
+                                <label for="city_1" class="text-gray-600 mb-2 text-sm font-bold">City</label>
+                                <input type="text" name="city"
+                                    class="form-input" id="city_1">
+                            </div>
+                            <div class="lg:col-start-4 lg:col-end-5 col-start-3 col-end-5">
+                                <label for="post_code_1" class="text-gray-600 mb-2 text-sm font-bold">Post code</label>
+                                <input type="text" name="post_cod"
+                                    class="form-input" id="post_code_1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-sm my-3">
+                        <!-- heading start -->
+                        <div class="flex items-center mb-3">
+                            <h2 class="text-bold text-blue-500 font-bold mr-3">Social media</h2>
+                            <div class="border-b flex-grow"></div>
+                        </div>
+                        <!--heading end-->
+                        <div class=" grid grid-cols-4 gap-3">
+                            <div class="col-start-1 col-end-3">
+                                <label for="facebook_1" class="text-gray-600 mb-2 text-sm font-bold">Facebook</label>
+                                <input type="url" name="facebook"
+                                    class="form-input" id="facebook_1">
+                            </div>
+                            <div class="col-start-3 col-end-5">
+                                <label for="instagram_1" class="text-gray-600 mb-2 text-sm font-bold">Instagram</label>
+                                <input type="url" name="instagram"
+                                    class="form-input" id="instagram_1">
+                            </div>
+                            <div class="col-start-1 col-end-3">
+                                <label for="linkedin_1" class="text-gray-600 mb-2 text-sm font-bold">LinkedIn</label>
+                                <input type="url" name="linkedin"
+                                    class="form-input" id="linkedin_1">
+                            </div>
+                            <div class="col-start-3 col-end-5">
+                                <label for="twitter_1" class="text-gray-600 mb-2 text-sm font-bold">Twitter</label>
+                                <input type="text" name="twiiter"
+                                    class="form-input" id="twitter_1">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-between">
+                    <button
+                        class="rounded-md bg-transparent border-2 hover:border-green-700 hover:text-green-700 border-green-500 text-green-500 px-5 py-3 font-bold flex items-center">
+                        <span class="icon-plus mr-2"></span>
+                        <span>Add another model</span> 
+                    </button>
+                    <button
+                        class="rounded-md bg-blue-600 text-white px-5 py-3 font-bold flex items-center hover:bg-blue-800">
+                        Save
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- main end -->
+    </div>
+    <script src="./dist/js/app.js">
+
+    </script>
+</body>
+
+</html>
