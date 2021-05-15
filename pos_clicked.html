@@ -12,6 +12,52 @@
 </head>
 
 <body class="font-sans">
+    <!--Modal Start-->
+    <!-- modal background start -->
+    <div class="modal-background">
+        <div class="modal">
+            <div class="modal-head">
+                <h6 class="text-lg font-bold text-blue-500">Complete Payment</h6>
+                <button id="close_modal" class="text-xl text-gray-500 hover:text-red-500">
+                    <i class="iconly-Close-Square icbo"></i>
+                </button>
+            </div>
+            <div class="modal-body text-gray-600">
+                <div class="flex items-center justify-between py-3 border-b-2">
+                    <span class="text-sm">Total Amount</span>
+                    <span class="font-bold">$ 1,128</span>
+                </div>
+                <div class="flex items-center py-3">
+                    <div class="inline-flex items-center mr-5">
+                        <label class="custom-checkbox mr-3" for="credit-card">
+                            <input type="checkbox" name="" id="credit-card">
+                            <span></span>
+                        </label>
+                        <label for="credit-card" class="w-24 text-sm capitalize font-bold">Credit card</label>
+                    </div>
+                    <div class="inline-flex items-center">
+                        <label class="custom-checkbox mr-3" for="cash">
+                            <input type="checkbox" name="" id="cash">
+                            <span></span>
+                        </label>
+                        <label for="cash" class="w-24 text-sm capitalize font-bold">Cash</label>
+                    </div>
+                </div>
+                <div class="my-3 flex justify-between items-center">
+                    <button
+                        class="rounded-md bg-blue-600 text-white px-5 py-3 font-bold flex items-center hover:bg-blue-800">
+                        Complete payment
+                    </button>
+                    <button
+                        class="rounded-md border-2 border-blue-600 text-blue-600  px-5 py-3 font-bold flex items-center hover:border-blue-800 hover:text-blue-800 ">
+                        Print Invoice
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal background end -->
+    <!-- Modal End -->
     <div class="min-h-screen flex items-start bg-blue-100">
         <!-- sidebar start -->
         <aside class="sidebar">
@@ -240,16 +286,16 @@
                         </div>
                         <ul class=" max-h-72 text-gray-600 overflow-y-auto">
                             <li>
-                                <a href="" class="inline-block w-full py-2 hover:text-blue">Izzy Dunlop</a>
+                                <a href="" class="inline-block w-full py-2 hover:text-blue-600">Izzy Dunlop</a>
                             </li>
                             <li>
-                                <a href="" class="inline-block w-full py-2 hover:text-blue">Nela</a>
+                                <a href="" class="inline-block w-full py-2 hover:text-blue-600">Nela</a>
                             </li>
                             <li>
-                                <a href="" class="inline-block w-full py-2 hover:text-blue">Sachin Vaughn</a>
+                                <a href="" class="inline-block w-full py-2 hover:text-blue-600">Sachin Vaughn</a>
                             </li>
                             <li>
-                                <a href="" class="inline-block w-full py-2 hover:text-blue">Inaya Rankin</a>
+                                <a href="" class="inline-block w-full py-2 hover:text-blue-600">Inaya Rankin</a>
                             </li>
                         </ul>
                     </div>
@@ -301,7 +347,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="w-1/2 hidden flex-col justify-between min-h-screen bg-white mr-5">
+                <div class="w-1/2 flex flex-col justify-between min-h-screen bg-white mr-5">
                     <div class="mb-4 p-4">
                         <div class="flex py-3 border-b-2 text-gray-500">
                             <img src="./dist/img/products/skin_care.png" class="object-cover object-center w-12 h-12 rounded-xl ring-2 ring-blue-200 mr-4" alt="">
@@ -435,8 +481,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full grid grid-cols-6 gap-4">
-                    <a href="./pos_clicked.html"
+                <div class="w-1/2 grid grid-cols-3 gap-4">
+                    <a href="#"
                         class="block border-2 border-transparent hover:border-blue-300 hover:shadow-md rounded-lg h-60 overflow-hidden bg-white pos-product">
                         <div class="h-3/5 bg-blue-200">
                             <div class="w-full h-full flex justify-center text-5xl text-blue-700 items-center">
@@ -451,7 +497,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="./pos_clicked.html"
+                    <a href="#"
                         class="block border-2 border-transparent hover:border-blue-300 hover:shadow-md rounded-lg h-60 overflow-hidden bg-white pos-product">
                         <div class="h-3/5 bg-blue-200">
                             <img class=" w-full h-full object-cover object-center" src="./dist/img/products/fruits.png"
@@ -465,7 +511,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="./pos_clicked.html"
+                    <a href="#"
                         class="block border-2 border-transparent hover:border-blue-300 hover:shadow-md rounded-lg h-60 overflow-hidden bg-white pos-product">
                         <div class="h-3/5 bg-blue-200">
                             <div class="w-full h-full flex justify-center text-5xl text-blue-700 items-center">
@@ -480,7 +526,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="./pos_clicked.html"
+                    <a href="#"
                         class="block border-2 border-transparent hover:border-blue-300 hover:shadow-md rounded-lg h-60 overflow-hidden bg-white pos-product">
                         <div class="h-3/5 bg-blue-200">
                             <img class=" w-full h-full object-cover object-center"
@@ -494,7 +540,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="./pos_clicked.html"
+                    <a href="#"
                         class="block border-2 border-transparent hover:border-blue-300 hover:shadow-md rounded-lg h-60 overflow-hidden bg-white pos-product">
                         <div class="h-3/5 bg-blue-200">
                             <div class="w-full h-full flex justify-center text-5xl text-blue-700 items-center">
@@ -509,7 +555,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="./pos_clicked.html"
+                    <a href="#"
                         class="block border-2 border-transparent hover:border-blue-300 hover:shadow-md rounded-lg h-60 overflow-hidden bg-white pos-product">
                         <div class="h-3/5 bg-blue-200">
                             <img class=" w-full h-full object-cover object-center"
@@ -523,7 +569,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="./pos_clicked.html"
+                    <a href="#"
                         class="block border-2 border-transparent hover:border-blue-300 hover:shadow-md rounded-lg h-60 overflow-hidden bg-white pos-product">
                         <div class="h-3/5 bg-blue-200">
                             <div class="w-full h-full flex justify-center text-5xl text-blue-700 items-center">
@@ -538,7 +584,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="./pos_clicked.html"
+                    <a href="#"
                         class="block border-2 border-transparent hover:border-blue-300 hover:shadow-md rounded-lg h-60 overflow-hidden bg-white pos-product">
                         <div class="h-3/5 bg-blue-200">
                             <img class=" w-full h-full object-cover object-center"
@@ -553,7 +599,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="./pos_clicked.html"
+                    <a href="#"
                         class="block border-2 border-transparent hover:border-blue-300 hover:shadow-md rounded-lg h-60 overflow-hidden bg-white pos-product">
                         <div class="h-3/5 bg-blue-200">
                             <div class="w-full h-full flex justify-center text-5xl text-blue-700 items-center">
@@ -568,7 +614,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="./pos_clicked.html"
+                    <a href="#"
                         class="block border-2 border-transparent hover:border-blue-300 hover:shadow-md rounded-lg h-60 overflow-hidden bg-white pos-product">
                         <div class="h-3/5 bg-blue-200">
                             <img class=" w-full h-full object-cover object-center" src="./dist/img/products/fruits.png"
