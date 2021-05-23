@@ -30,17 +30,17 @@
     const closeModalButton = document.querySelector('#close_modal')
     const modal = document.querySelector('.modal-background')
 
-    categoryTrigger.addEventListener('click',(button)=>{
+    categoryTrigger?.addEventListener('click',(button)=>{
         button.preventDefault()
         categorySidebar.classList.remove('hidden')
     })
 
-    closeSidebarButton.addEventListener('click',(button)=>{
+    closeSidebarButton?.addEventListener('click',(button)=>{
         button.preventDefault()
         categorySidebar.classList.add('hidden')
     })
 
-    closeModalButton.addEventListener('click',(event)=>{
+    closeModalButton?.addEventListener('click',(event)=>{
         modal.classList.add('hidden')
     })
 
