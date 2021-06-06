@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/font/icomoon/style.css">
+    <link rel="stylesheet" href="./dist/font/icony/dist/css/style.css">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>Surveys::New Survey</title>
+</head>
+
+<body class="bg-blue-100 font-sans">
+    <div class="min-h-screen flex items-start bg-blue-100">
+        <!-- sidebar start -->
+        <aside class="sidebar">
+            <button class="block w-10 mb-7 menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="flex-col items-center p-3 w-full">
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Category"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Home</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Chart icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Reports</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Calendar icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Calender</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Time-Square icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Reception</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-User3 icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Staff</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" data-target="marketing" class="sidebar-dropdown">
+                        <span class="text-3xl">
+                            <i class="iconly-Discount icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Marketing</span>
+                        <span class="indicator">
+                            <i class="iconly-Arrow-Down-2 icli"></i>
+                        </span>
+                    </a>
+                    <ul class="sublink show" id="marketing">
+                        <li>
+                            <a href="#">SMS Campaign</a>
+                        </li>
+                        <li>
+                            <a href="#">E-Mail Campaign</a>
+                        </li>
+                        <li>
+                            <a href="#">Surveys</a>
+                        </li>
+                        <li>
+                            <a href="#">Automatic remainders</a>
+                        </li>
+                        <li>
+                            <a href="#">Referrals</a>
+                        </li>
+                        <li>
+                            <a href="#">Affiliates</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Graph icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Sales</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Activity icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Stock</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" data-target="finance" class="sidebar-dropdown">
+                        <span class="text-3xl">
+                            <i class="iconly-Document icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Finance</span>
+                        <span class="indicator">
+                            <i class="iconly-Arrow-Down-2 icli"></i>
+                        </span>
+                    </a>
+                    <ul class="sublink show" id='finance'>
+                        <li>
+                            <a href="#">POS</a>
+                        </li>
+                        <li>
+                            <a href="#">Expenses</a>
+                        </li>
+                        <li>
+                            <a href="#">Invoices</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="w-full block">
+                    <a href="#" data-target="client" class="sidebar-dropdown">
+                        <span class="text-3xl">
+                            <i class="iconly-Work icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Clients</span>
+                        <span class="indicator">
+                            <i class="iconly-Arrow-Down-2 icli"></i>
+                        </span>
+                    </a>
+                    <ul class="sublink show" id="client">
+                        <li>
+                            <a href="#">Leads</a>
+                        </li>
+                        <li>
+                            <a href="#">Clients</a>
+                        </li>
+                        <li>
+                            <a href="#">Lead Form</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="w-full block">
+                    <a href="#" data-target="more" class="sidebar-dropdown">
+                        <span class="text-2xl">
+                            <i class="iconly-More-Square icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">More</span>
+                        <span class="indicator">
+                            <i class="iconly-Arrow-Down-2 icli"></i>
+                        </span>
+                    </a>
+                    <ul class="sublink show" id="more">
+                        <li>
+                            <a href="#">Notes</a>
+                        </li>
+                        <li>
+                            <a href="#">Documents</a>
+                        </li>
+                        <li>
+                            <a href="#">Tags</a>
+                        </li>
+                        <li>
+                            <a href="#">Forms</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <span class="icon-tooth_2"></span>
+                        </span>
+                        <span class="inline-block mt-1 title">Teeth Charts</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- sidebar end -->
+        <!-- main start -->
+        <main class="flex-grow">
+            <!-- navbar start -->
+            <nav
+                class="flex justify-end sticky z-10 top-0 items-center bg-white border-b border-blue-100 py-4 px-4 shadow-lg">
+                <div class="flex items-center mr-auto text-lg">
+                    <!-- logo start -->
+                    <img src="./dist/img/Sellsio_logo.svg" alt="selsio logo" class="w-12 h-auto">
+                    <!-- logo end -->
+                    <a href="#" class="hover:text-blue-500">
+                        <i class="iconly-Arrow-Left icli ml-3 text-blue-600 text-2xl"></i>
+                    </a>
+                    <a href="#" class="inline-block ml-3 font-bold text-gray-500 hover:text-blue-500">Surveys</a>
+                    <span class="inline-block ml-3 font-bold text-gray-500">/</span>
+                    <span class="inline-block ml-3 font-bold text-blue-600">Add new survey</span>
+
+                </div>
+                <div class=" w-60">
+                    <input placeholder="Search" type="search" name=""
+                        class="rounded-md inline-block w-full bg-blue-100 h-10 p-3 placeholder-gray-600" id="">
+                </div>
+                <button class="notification-bell active ml-4">
+                    <i class="iconly-Notification icli"></i>
+                </button>
+                <button
+                    class="rounded-md p-1 ml-4 text-white font-bold bg-blue-600 hover:bg-blue-700 text-md border-2 border-blue-900 flex items-center">
+                    <span class="icon-plus mr-2"></span>
+                    <span class="hidden lg:inline-block">Create a new...</span>
+                    <span class="inline-block lg:hidden">New</span>
+                    <span class="block rounded-r-md px-1 text-blue-700 bg-blue-300 ml-2">
+                        <i class="iconly-Arrow-Down-2 icli"></i>
+                    </span>
+                </button>
+                <span class="text-sm hidden lg:inline-block text-blue-600 font-bold ml-4">Richard Peck</span>
+                <span class="inline-block ml-4">
+                    <img src="https://wallpaperaccess.com/full/2213424.jpg" class="avatar" alt="Profile image">
+                </span>
+            </nav>
+            <!-- navbar end -->
+            <!-- main body start -->
+            <div class="flex items-center px-4 bg-blue-200">
+                <a href="#"
+                    class="py-4 inline-block text-sm font-bold capitalize border-b-4 border-blue-500 text-blue-500 hover:text-blue-700 mr-8">
+                    <span>Survey settings</span>
+                </a>
+                <a href="#"
+                    class=" py-4 inline-block text-sm border-transparent border-b-4 text-gray-500 font-bold hover:text-blue-700 mr-8">
+                    <span>Questions</span>
+                </a>
+            </div>
+            <section class="m-4 mx-auto mt-5 max-w-5xl">
+                <div class="rounded-xl border-2 border-blue-200 p-3 bg-white">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label for="survey_name" class="font-bold text-gray-600 text-sm">Survey_name</label>
+                            <input type="text" class="form-input" id="survey_name">
+                        </div>
+                        <div>
+                            <label for="description" class="font-bold text-gray-600 text-sm">Description</label>
+                            <input type="text" class="form-input" id="description">
+                        </div>
+                        <div>
+                            <label for="translation" class="font-bold text-gray-600 text-sm">Translation</label>
+                            <input type="text" class="form-input" id="translation">
+                        </div>
+                        <div class="flex">
+                            <div class="mr-3">
+                                <label for="header_color" class="font-bold text-gray-600 text-sm">Header Color</label>
+                                <input type="color" value="blue" class="form-input" id="header_color">
+                            </div>
+                            <div class="mr-3">
+                                <label for="body_color" class="font-bold text-gray-600 text-sm">Body Color</label>
+                                <input type="color" value="green" class="form-input w-10" id="body_color">
+                            </div>
+                            <div class="mr-3">
+                                <label class="font-bold text-gray-600 text-sm mb-3">Logo Position</label>
+                                <div class="flex items-center">
+                                    <div class="flex items-center mr-3">
+                                        <label class="custom-checkbox mr-3" for="position_left">
+                                            <input type="radio" checked name="logo_position" value="left"
+                                                id="position_left">
+                                            <span></span>
+                                        </label>
+                                        <span class="text-xs">Left</span>
+                                    </div>
+                                    <div class="flex items-center mr-3">
+                                        <label class="custom-checkbox mr-3" for="position_right">
+                                            <input type="radio" name="logo_position" value="right" id="position_right">
+                                            <span></span>
+                                        </label>
+                                        <span class="text-xs">Right</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <label class="custom-checkbox mr-3" for="position_center">
+                                            <input type="radio" name="logo_position" value="center"
+                                                id="position_center">
+                                            <span></span>
+                                        </label>
+                                        <span class="text-xs">Center</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="services" class="font-bold text-gray-600 text-sm">Services</label>
+                            <select id="services" name="services" class="form-input">
+                            </select>
+                        </div>
+                        <div>
+                            <label for="services" class="font-bold text-gray-600 text-sm">Send this survey after</label>
+                            <div class="flex items-center text-gray-600">
+                                <div class="flex items-center w-32 mr-8">
+                                    <input type="text" name="" class="form-input" id="">
+                                    <span class="text-xs ml-2">Days</span>
+                                </div>
+                                <div class="flex items-center w-32">
+                                    <span class="text-xs mr-2">at</span>
+                                    <select type="text" name="" class="form-input" id="">
+                                    </select>
+                                    <span class="text-xs ml-2">Days</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- seprator start -->
+                    <div class="flex items-center my-5">
+                        <h2 class="text-bold text-blue-500 font-bold mr-3">Additional settings</h2>
+                        <div class="border-b flex-grow"></div>
+                    </div>
+                    <!--seprator end-->
+                    <div class="flex items-center mb-3">
+                        <label for="redirection" class="text-gray-600 font-bold text-sm mr-3">Redirection</label>
+                        <label class="switch" for="redirection">
+                            <input type="checkbox" id="redirection">
+                            <span>
+                                <span></span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label for="redirect_to" class="font-bold text-gray-600 text-sm">Redirect to</label>
+                            <select id="services" name="redirect_to" class="form-input">
+                            </select>
+                        </div>
+                        <div>
+                            <label for="links" class="font-bold text-gray-600 text-sm">Link</label>
+                            <input id="services" name="links" class="form-input" />
+                        </div>
+                        <div>
+                            <label for="redirect_to" class="font-bold text-gray-600 text-sm">Redirect automatically if
+                                the survey has</label>
+                            <div class="w-44 flex items-center">
+                                <select id="services" name="redirect_to" class="form-input">
+                                </select>
+                                <span class="text-sm ml-2">
+                                    stars
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-start-1 col-end-3">
+                            <label for="redirect_to" class="font-bold text-gray-600 text-sm">Text</label>
+                            <textarea name="" id="email-content" class="form-textarea form-white" rows="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center mt-5 justify-end">
+                    <button
+                        class="rounded-md mr-3 bg-transparent border-2 text-sm hover:border-blue-700 hover:text-blue-700 border-blue-500 text-blue-500 px-4 py-2 font-bold flex items-center">
+                        <span>Save as draft</span>
+                    </button>
+                    <button
+                        class="rounded-md border-2 border-blue-600 bg-blue-600 text-white px-4 py-2 text-sm font-bold flex items-center hover:bg-blue-800">
+                        Next
+                    </button>
+                </div>
+            </section>
+            <!-- main body end -->
+        </main>
+    </div>
+</body>
+<script src="./dist/js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/jquery.tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+    tinymce.init({
+        selector: 'textarea', // change this value according to your HTML
+        content_css: 'dark'
+    });
+    $('#email-content').tinymce({
+        height: 250,
+        menubar: false,
+    })
+</script>
+
+</html>
