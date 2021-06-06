@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/font/icomoon/style.css">
+    <link rel="stylesheet" href="./dist/font/icony/dist/css/style.css">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>Affilite</title>
+</head>
+
+<body class="bg-blue-100 font-sans">
+    <div class="min-h-screen flex items-start bg-blue-100">
+        <!-- sidebar start -->
+        <aside class="sidebar">
+            <button class="block w-10 mb-7 menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="flex-col items-center p-3 w-full">
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Category"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Home</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Chart icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Reports</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Calendar icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Calender</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Time-Square icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Reception</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-User3 icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Staff</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" data-target="marketing" class="sidebar-dropdown">
+                        <span class="text-3xl">
+                            <i class="iconly-Discount icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Marketing</span>
+                        <span class="indicator">
+                            <i class="iconly-Arrow-Down-2 icli"></i>
+                        </span>
+                    </a>
+                    <ul class="sublink show" id="marketing">
+                        <li>
+                            <a href="#">SMS Campaign</a>
+                        </li>
+                        <li>
+                            <a href="#">E-Mail Campaign</a>
+                        </li>
+                        <li>
+                            <a href="#">Surveys</a>
+                        </li>
+                        <li>
+                            <a href="#">Automatic remainders</a>
+                        </li>
+                        <li>
+                            <a href="#">Referrals</a>
+                        </li>
+                        <li>
+                            <a href="#">Affiliates</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Graph icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Sales</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Activity icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Stock</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" data-target="finance" class="sidebar-dropdown">
+                        <span class="text-3xl">
+                            <i class="iconly-Document icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Finance</span>
+                        <span class="indicator">
+                            <i class="iconly-Arrow-Down-2 icli"></i>
+                        </span>
+                    </a>
+                    <ul class="sublink show" id='finance'>
+                        <li>
+                            <a href="#">POS</a>
+                        </li>
+                        <li>
+                            <a href="#">Expenses</a>
+                        </li>
+                        <li>
+                            <a href="#">Invoices</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="w-full block">
+                    <a href="#" data-target="client" class="sidebar-dropdown">
+                        <span class="text-3xl">
+                            <i class="iconly-Work icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Clients</span>
+                        <span class="indicator">
+                            <i class="iconly-Arrow-Down-2 icli"></i>
+                        </span>
+                    </a>
+                    <ul class="sublink show" id="client">
+                        <li>
+                            <a href="#">Leads</a>
+                        </li>
+                        <li>
+                            <a href="#">Clients</a>
+                        </li>
+                        <li>
+                            <a href="#">Lead Form</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="w-full block">
+                    <a href="#" data-target="more" class="sidebar-dropdown">
+                        <span class="text-2xl">
+                            <i class="iconly-More-Square icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">More</span>
+                        <span class="indicator">
+                            <i class="iconly-Arrow-Down-2 icli"></i>
+                        </span>
+                    </a>
+                    <ul class="sublink show" id="more">
+                        <li>
+                            <a href="#">Notes</a>
+                        </li>
+                        <li>
+                            <a href="#">Documents</a>
+                        </li>
+                        <li>
+                            <a href="#">Tags</a>
+                        </li>
+                        <li>
+                            <a href="#">Forms</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <span class="icon-tooth_2"></span>
+                        </span>
+                        <span class="inline-block mt-1 title">Teeth Charts</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- sidebar end -->
+        <!-- main start -->
+        <main class="flex-grow">
+            <!-- navbar start -->
+            <nav
+                class="flex justify-end sticky z-10 top-0 items-center bg-white border-b border-blue-100 py-4 px-4 shadow-lg">
+                <div class="flex items-center mr-auto text-lg">
+                    <!-- logo start -->
+                    <img src="./dist/img/Sellsio_logo.svg" alt="selsio logo" class="w-12 h-auto">
+                    <!-- logo end -->
+                    <span class="inline-block ml-3 font-bold text-blue-600">Affiliate</span>
+
+                </div>
+                <div class=" w-60">
+                    <input placeholder="Search" type="search" name=""
+                        class="rounded-md inline-block w-full bg-blue-100 h-10 p-3 placeholder-gray-600" id="">
+                </div>
+                <button class="notification-bell active ml-4">
+                    <i class="iconly-Notification icli"></i>
+                </button>
+                <button
+                    class="rounded-md p-1 ml-4 text-white font-bold bg-blue-600 hover:bg-blue-700 text-md border-2 border-blue-900 flex items-center">
+                    <span class="icon-plus mr-2"></span>
+                    <span class="hidden lg:inline-block">Create a new...</span>
+                    <span class="inline-block lg:hidden">New</span>
+                    <span class="block rounded-r-md px-1 text-blue-700 bg-blue-300 ml-2">
+                        <i class="iconly-Arrow-Down-2 icli"></i>
+                    </span>
+                </button>
+                <span class="text-sm hidden lg:inline-block text-blue-600 font-bold ml-4">Richard Peck</span>
+                <span class="inline-block ml-4">
+                    <img src="https://wallpaperaccess.com/full/2213424.jpg" class="avatar" alt="Profile image">
+                </span>
+            </nav>
+            <!-- navbar end -->
+            <div class="text-center text-gray-600 mx-4 my-7">
+                <h1 class="font-bold text-2xl">Refer to friends & earn points</h1>
+                <p class="mt-2 text-sm">
+                    Introduce <a href="#" class="text-blue-500 hover:text-blue-700 font-bold">Sellsio</a> to a friend
+                    and you will get <span
+                        class="inline-flex justify-center items-center p-4 border-2 bg-blue-200 border-blue-300 h-6 text-blue-600 text-lg rounded-lg align-middle font-bold">10</span>
+                    percent discount off your subscription
+                </p>
+            </div>
+            <!-- table-start -->
+            <div class="mx-auto max-w-5xl">
+                <div class="my-6">
+                    <h2 class="text-gray-600 font-bold text-lg mb-2">Your referral code</h2>
+                    <div class="flex items-stretch justify-between">
+                        <div class="flex-grow">
+                            <div
+                                class="w-full rounded-lg cursor-pointer bg-white  border-gray-200 h-9 border-2 px-1 pl-3 flex justify-between items-center text-gray-400">
+                                <span class="p-0 m-0 text-sm">https://sellsio.com/referrals/enquiry?referral </span>
+                                <button
+                                    class="rounded-md bg-blue-600 text-xs text-white px-2 py-1 font-bold flex items-center hover:bg-blue-800">
+                                    Copy link
+                                </button>
+                            </div>
+                        </div>
+                        <div class="ml-2 px-2 text-xs text-gray-600 border-2 rounded-md bg-white inline-flex justify-start items-center">
+                            <i class="iconly-Work icli text-lg mr-1"></i> 
+                            <span class="mr-3">
+                                New referrals
+                            </span>
+                            <span class="block font-bold ml-auto">
+                                6
+                            </span>
+                        </div>
+                        <div class="ml-2 px-2 text-xs text-gray-600 border-2 rounded-md bg-white inline-flex justify-start items-center">
+                            <span class="icon-handshake text-lg mr-1"></span>
+                            <span class="mr-3">
+                                Successful
+                            </span>
+                            <span class="block font-bold ml-auto">
+                                18
+                            </span>
+                        </div>
+                        <div class="ml-2 px-2 text-xs text-gray-600 border-2 rounded-md bg-white inline-flex justify-start items-center">
+                            <i class="iconly-Ticket-Star icli text-lg mr-1"></i>
+                            <span class="mr-3">
+                                Discount earned
+                            </span>
+                            <span class="block font-bold ml-auto">
+                                30%
+                            </span>
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="my-6">
+                    <h2 class="text-gray-600 font-bold text-lg mb-2">Reffered users</h2>
+                    <table class="table auto overflow-x-auto w-full">
+                        <thead class="text-gray-600">
+                            <tr class="bg-white border rounded-lg text-sm border-gray-300">
+                                <th class="py-5 px-2 cursor-pointer w-3/12 text-left">
+                                    <div class="inline-flex items-center">
+                                        <span class="inline-block mr-3">New Client</span>
+                                        <span class="flex flex-col items-center">
+                                            <i class="iconly-Arrow-Up-2 icbo text-gray-600"></i><span></span><i
+                                                class="iconly-Arrow-Down-2 icbo text-gray-400"></i>
+                                        </span>
+                                    </div>
+                                </th>
+                                <th class="py-5 px-2 cursor-pointer w-3/12 text-left">
+                                    <div class="inline-flex items-center">
+                                        <span class="inline-block mr-3">Email</span>
+                                        <span class="flex flex-col items-center">
+                                            <i class="iconly-Arrow-Up-2 icbo text-gray-600"></i><span></span><i
+                                                class="iconly-Arrow-Down-2 icbo text-gray-400"></i>
+                                        </span>
+                                    </div>
+                                </th>
+                                <th class="py-5 px-2 cursor-pointer w-3/12 text-left">
+                                    <div class="inline-flex items-center">
+                                        <span class="inline-block mr-3">Company name</span>
+                                        <span class="flex flex-col items-center">
+                                            <i class="iconly-Arrow-Up-2 icbo text-gray-600"></i><span></span><i
+                                                class="iconly-Arrow-Down-2 icbo text-gray-400"></i>
+                                        </span>
+                                    </div>
+                                </th>
+                                <th class="py-5 px-2 cursor-pointer w-3/12 text-left">
+                                    <div class="inline-flex items-center">
+                                        <span class="inline-block mr-3">Discount</span>
+                                        <span class="flex flex-col items-center">
+                                            <i class="iconly-Arrow-Up-2 icbo text-gray-600"></i><span></span><i
+                                                class="iconly-Arrow-Down-2 icbo text-gray-400"></i>
+                                        </span>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b text-sm border-gray-300 text-gray-600">
+                                <td class="py-5 px-2">
+                                    <a href="" class="hover:text-blue-500 hover:underline">
+                                        Dental reminder
+                                    </a>
+                                </td>
+                                <td class="py-5 px-2">
+                                    donnie_liu@outlook.com
+                                </td>
+                                <td class="py-5 px-2">
+                                    Coca Cola
+                                </td>
+                                <td class="py-5 px-2">
+                                    150
+                                </td>
+                            </tr>
+                            <tr class="border-b text-sm border-gray-300 text-gray-600">
+                                <td class="py-5 px-2">
+                                    <a href="" class="hover:text-blue-500 hover:underline">
+                                        Member of mensa
+                                    </a>
+                                </td>
+                                <td class="py-5 px-2">
+                                    romario_maquire@yahoo.com
+                                </td>
+                                <td class="py-5 px-2">
+                                    Givenchy
+                                </td>
+                                <td class="py-5 px-2">
+                                    150
+                                </td>
+                            </tr>
+                            <tr class="border-b text-sm border-gray-300 text-gray-600">
+                                <td class="py-5 px-2">
+                                    <a href="" class="hover:text-blue-500 hover:underline">
+                                        Member of mensa
+                                    </a>
+                                </td>
+                                <td class="py-5 px-2">
+                                    romario_maquire@yahoo.com
+                                </td>
+                                <td class="py-5 px-2">
+                                    Givenchy
+                                </td>
+                                <td class="py-5 px-2">
+                                    150
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- pagination start -->
+            <div class="p-4 flex items-center justify-between mt-6">
+                <div class="text-gray-600">
+                    Show <select name="" class="bg-blue-200 py-2 px-3 rounded-md" id="">
+                        <option value="">10</option>
+                    </select>
+                </div>
+                <div class="flex justify-around items-center px-3">
+                    <a href="#" class="paginate paginate--disabled text-2xl">
+                        <i class="iconly-Arrow-Left-2 icli"></i>
+                    </a>
+                    <a href="#" class="paginate paginate--active">
+                        1
+                    </a>
+                    <a href="#" class="paginate">
+                        2
+                    </a>
+                    <a href="#" class="paginate">
+                        3
+                    </a>
+                    <a href="#" class="paginate">
+                        4
+                    </a>
+                    <a href="#" class="paginate paginate--disabled text-2xl">
+                        <i class="iconly-Arrow-Right-2 icli"></i>
+                    </a>
+                </div>
+                <!-- result start -->
+                <div class="text-gray-400">
+                    10 of 14 results
+                </div>
+                <!-- result end -->
+            </div>
+            <!--pagination end-->
+        </main>
+    </div>
+    <script src="./dist/js/app.js"></script>
+</body>
+
+</html>
