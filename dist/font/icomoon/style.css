@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?jjf3gr');
-  src:  url('fonts/icomoon.eot?jjf3gr#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?jjf3gr') format('truetype'),
-    url('fonts/icomoon.woff?jjf3gr') format('woff'),
-    url('fonts/icomoon.svg?jjf3gr#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?nx5013');
+  src:  url('fonts/icomoon.eot?nx5013#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?nx5013') format('truetype'),
+    url('fonts/icomoon.woff?nx5013') format('woff'),
+    url('fonts/icomoon.svg?nx5013#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,56 +25,68 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-spiral:before {
+  content: "\e910";
+}
+.icon-spiral_inverse:before {
+  content: "\e911";
+}
+.icon-star:before {
+  content: "\e90c";
+}
+.icon-star_hollow:before {
+  content: "\e90d";
+}
 .icon-rooms:before {
   content: "\e90b";
- 
+  
 }
 .icon-bookings:before {
   content: "\e904";
 }
 .icon-equipment:before {
   content: "\e905";
- 
+  
 }
 .icon-fields:before {
   content: "\e907";
- 
+  
 }
 .icon-handshake:before {
   content: "\e908";
- 
+  
 }
 .icon-packages:before {
   content: "\e909";
- 
+  
 }
 .icon-pharmacies:before {
   content: "\e90a";
- 
+  
 }
 .icon-spanner:before {
   content: "\e90e";
- 
+  
 }
 .icon-bar_code:before {
   content: "\e903";
- 
+  
 }
 .icon-list:before {
   content: "\e902";
- 
+  
 }
 .icon-list_2:before {
   content: "\e906";
- 
+  
 }
 .icon-phone_2:before {
   content: "\e900";
- 
+  
 }
 .icon-tooth_2:before {
   content: "\e90f";
- 
+  
 }
 .icon-plus:before {
   content: "\e901";
