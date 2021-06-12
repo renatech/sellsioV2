@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/font/icomoon/style.css">
+    <link rel="stylesheet" href="./dist/font/icony/dist/css/style.css">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>Sales::Overview</title>
+</head>
+
+<body class="bg-blue-100 font-sans">
+    <div class="min-h-screen flex items-start bg-blue-100">
+        <!-- sidebar start -->
+        <aside class="sidebar">
+            <button class="block w-10 mb-7 menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="flex-col items-center p-3 w-full">
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Category"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Home</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Chart icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Reports</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Calendar icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Calender</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Time-Square icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Reception</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-User3 icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Staff</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" data-target="marketing" class="sidebar-dropdown">
+                        <span class="text-3xl">
+                            <i class="iconly-Discount icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Marketing</span>
+                        <span class="indicator">
+                            <i class="iconly-Arrow-Down-2 icli"></i>
+                        </span>
+                    </a>
+                    <ul class="sublink show" id="marketing">
+                        <li>
+                            <a href="#">SMS Campaign</a>
+                        </li>
+                        <li>
+                            <a href="#">E-Mail Campaign</a>
+                        </li>
+                        <li>
+                            <a href="#">Surveys</a>
+                        </li>
+                        <li>
+                            <a href="#">Automatic remainders</a>
+                        </li>
+                        <li>
+                            <a href="#">Referrals</a>
+                        </li>
+                        <li>
+                            <a href="#">Affiliates</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Graph icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Sales</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <i class="iconly-Activity icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Stock</span>
+                    </a>
+                </li>
+                <li class="w-full block">
+                    <a href="#" data-target="finance" class="sidebar-dropdown">
+                        <span class="text-3xl">
+                            <i class="iconly-Document icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Finance</span>
+                        <span class="indicator">
+                            <i class="iconly-Arrow-Down-2 icli"></i>
+                        </span>
+                    </a>
+                    <ul class="sublink show" id='finance'>
+                        <li>
+                            <a href="#">POS</a>
+                        </li>
+                        <li>
+                            <a href="#">Expenses</a>
+                        </li>
+                        <li>
+                            <a href="#">Invoices</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="w-full block">
+                    <a href="#" data-target="client" class="sidebar-dropdown">
+                        <span class="text-3xl">
+                            <i class="iconly-Work icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">Clients</span>
+                        <span class="indicator">
+                            <i class="iconly-Arrow-Down-2 icli"></i>
+                        </span>
+                    </a>
+                    <ul class="sublink show" id="client">
+                        <li>
+                            <a href="#">Leads</a>
+                        </li>
+                        <li>
+                            <a href="#">Clients</a>
+                        </li>
+                        <li>
+                            <a href="#">Lead Form</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="w-full block">
+                    <a href="#" data-target="more" class="sidebar-dropdown">
+                        <span class="text-2xl">
+                            <i class="iconly-More-Square icli"></i>
+                        </span>
+                        <span class="inline-block mt-1 title">More</span>
+                        <span class="indicator">
+                            <i class="iconly-Arrow-Down-2 icli"></i>
+                        </span>
+                    </a>
+                    <ul class="sublink show" id="more">
+                        <li>
+                            <a href="#">Notes</a>
+                        </li>
+                        <li>
+                            <a href="#">Documents</a>
+                        </li>
+                        <li>
+                            <a href="#">Tags</a>
+                        </li>
+                        <li>
+                            <a href="#">Forms</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="w-full block">
+                    <a href="#" class="sidebar-link">
+                        <span class="text-3xl">
+                            <span class="icon-tooth_2"></span>
+                        </span>
+                        <span class="inline-block mt-1 title">Teeth Charts</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- sidebar end -->
+        <!-- main start -->
+        <main class="flex-grow">
+            <!-- navbar start -->
+            <nav
+                class="flex justify-end sticky z-10 top-0 items-center bg-white border-b border-blue-100 py-4 px-4 shadow-lg">
+                <div class="flex items-center mr-auto text-lg">
+                    <!-- logo start -->
+                    <img src="./dist/img/Sellsio_logo.svg" alt="selsio logo" class="w-12 h-auto">
+                    <!-- logo end -->
+                    <span class="inline-block ml-3 font-bold text-blue-600">Sales Overview</span>
+                </div>
+                <div class=" w-60">
+                    <input placeholder="Search" type="search" name=""
+                        class="rounded-md inline-block w-full bg-blue-100 h-10 p-3 placeholder-gray-600" id="">
+                </div>
+                <button class="notification-bell active ml-4">
+                    <i class="iconly-Notification icli"></i>
+                </button>
+                <button
+                    class="rounded-md p-1 ml-4 text-white font-bold bg-blue-600 hover:bg-blue-700 text-md border-2 border-blue-900 flex items-center">
+                    <span class="icon-plus mr-2"></span>
+                    <span class="hidden lg:inline-block">Create a new...</span>
+                    <span class="inline-block lg:hidden">New</span>
+                    <span class="block rounded-r-md px-1 text-blue-700 bg-blue-300 ml-2">
+                        <i class="iconly-Arrow-Down-2 icli"></i>
+                    </span>
+                </button>
+                <span class="text-sm hidden lg:inline-block text-blue-600 font-bold ml-4">Richard Peck</span>
+                <span class="inline-block ml-4">
+                    <img src="https://wallpaperaccess.com/full/2213424.jpg" class="avatar" alt="Profile image">
+                </span>
+            </nav>
+            <!-- navbar end -->
+            <div class="py-5 flex justify-end text-gray-600 bg-blue-200 items-center px-4">
+                <h1 class="text-2xl text-blue-800 font-bold mr-auto">
+                    Connection technologies
+                </h1>
+                <div class="w-20 mr-3">
+                    <select name="" class=" form-input form-white text-sm">
+                        <option value="">May</option>
+                    </select>
+                </div>
+                <button
+                    class="rounded-md shadow-md  hover:bg-gray-200 bg-gray-50 text-gray-600 px-3 py-1 font-bold flex text-xs items-center">
+                    <i class="iconly-Show icli mr-2 text-lg"></i>
+                    Hide
+                </button>
+            </div>
+            <!-- main body start -->
+            <section class="m-4 flex justify-between items-stretch">
+                <div class="w-8/12 mr-4 grid grid-cols-4 gap-4">
+                    <div class="border-2 rounded-lg flex flex-col border-blue-200 bg-white p-4">
+                        <span class="mb-2 inline-block text-sm font-bold text-gray-400">Total leads</span>
+                        <div class="flex justify-between items-center">
+                            <p class="text-gray-600 font-bold text-3xl">986</p>
+                            <span class="icon-spiral text-3xl text-green-400"></span>
+                        </div>
+                        <span class="text-sm inline-block mb-1 text-green-400 ">
+                            +4
+                        </span>
+                        <span class="text-gray-400 text-xs">
+                            Since last week
+                        </span>
+                    </div>
+                    <div class="border-2 rounded-lg flex flex-col border-blue-200 bg-white p-4">
+                        <span class="mb-2 inline-block text-sm font-bold text-gray-400">Open leads</span>
+                        <div class="flex justify-between items-center">
+                            <p class="text-gray-600 font-bold text-3xl">500</p>
+                            <span class="icon-spiral text-3xl text-green-400"></span>
+                        </div>
+                        <span class="text-sm inline-block mb-1 text-green-400 ">
+                            +26
+                        </span>
+                        <span class="text-gray-400 text-xs">
+                            Since last week
+                        </span>
+                    </div>
+                    <div class="border-2 rounded-lg flex flex-col border-blue-200 bg-white p-4">
+                        <span class="mb-2 inline-block text-sm font-bold text-gray-400">Converted leads</span>
+                        <div class="flex justify-between items-center">
+                            <p class="text-gray-600 font-bold text-3xl">386</p>
+                            <span class="icon-spiral_inverse text-3xl text-red-500"></span>
+                        </div>
+                        <span class="text-sm inline-block mb-1 text-red-500 ">
+                            -12
+                        </span>
+                        <span class="text-gray-400 text-xs">
+                            Since last week
+                        </span>
+                    </div>
+                    <div class="border-2 rounded-lg flex flex-col border-blue-200 bg-white p-4">
+                        <span class="mb-2 inline-block text-sm font-bold text-gray-400">Lost leads</span>
+                        <div class="flex justify-between items-center">
+                            <p class="text-gray-600 font-bold text-3xl">100</p>
+                            <span class="icon-spiral_inverse text-3xl text-red-500"></span>
+                        </div>
+                        <span class="text-sm inline-block mb-1 text-red-500 ">
+                            -22
+                        </span>
+                        <span class="text-gray-400 text-xs">
+                            Since last week
+                        </span>
+                    </div>
+                    <div class="border-2 rounded-lg border-blue-200 bg-white p-4">
+                        <span class="mb-1 inline-block text-sm font-bold text-gray-400">Total Leads cost</span>
+                        <p class="text-2xl text-gray-600 font-bold">
+                            £45,000
+                        </p>
+                    </div>
+                    <div class="border-2 rounded-lg border-blue-200 bg-white p-4">
+                        <span class="mb-1 inline-block text-sm font-bold text-gray-400">Open Leads cost</span>
+                        <p class="text-2xl text-gray-600 font-bold">
+                            £45,000
+                        </p>
+                    </div>
+                    <div class="border-2 rounded-lg border-blue-200 bg-white p-4">
+                        <span class="mb-1 inline-block text-sm font-bold text-gray-400">Avergae Commission</span>
+                        <p class="text-2xl text-gray-600 font-bold">
+                            £857.12
+                        </p>
+                    </div>
+                    <a href="#"
+                        class="border-2 rounded-lg text-blue-500 hover:text-blue-700 border-blue-200 hover:border-blue-500 flex flex-col items-center bg-white p-4">
+                        <i class="iconly-Plus icbo rounded-lg text-4xl"></i>
+                        <p class="mt-1">Add new</p>
+                    </a>
+                    <div
+                        class="col-start-1 col-end-3 flex flex-col rounded-lg border-2 p-4 border-blue-300 bg-cover bg-blue-700" style="background-image: url('./dist/img/Bg.png');">
+                        <div class="mb-4">
+                            <span class="mb-2 inline-block text-sm font-bold text-gray-200">Total commission</span>
+                            <div class="flex justify-between items-center">
+                                <p class="text-white font-bold text-5xl">£122,656</p>
+                                <span class="icon-spiral_inverse text-3xl text-green-400"></span>
+                            </div>
+                        </div>
+                        <div class="mt-auto flex-col flex">
+                            <span class="text-md inline-block mb-1 text-green-400 ">
+                                +33
+                            </span>
+                            <span class="text-gray-100 text-xs">
+                                Since last week
+                            </span>
+                        </div>
+                    </div>
+                    <div
+                        class="col-start-3 col-end-5 text-sm rounded-lg text-gray-600 border-2 p-4 border-blue-300 bg-blue-200">
+                        <h4 class="py-2 border-b mb-4 border-blue-300 font-bold">
+                            Leads source
+                        </h4>
+                        <div class="mb-2">
+                            <div class="flex justify-between mb-2 items-center">
+                                <span class="text-sm">Lead Stream (453)</span>
+                                <span class="text-xs">£75,850</span>
+                            </div>
+                            <span class=" block w-full rounded-full h-2 bg-gray-50 overflow-hidden">
+                                <span class="block rounded-full h-full bg-green-400" style="width: 50%"></span>
+                            </span>
+                        </div>
+                        <div class="mb-2">
+                            <div class="flex justify-between mb-2 items-center">
+                                <span class="text-sm">Marcotin (120)</span>
+                                <span class="text-xs">£75,850</span>
+                            </div>
+                            <span class=" block w-full rounded-full h-2 bg-gray-50 overflow-hidden">
+                                <span class="block rounded-full h-full bg-green-400" style="width: 50%"></span>
+                            </span>
+                        </div>
+                        <div class="mb-2">
+                            <div class="flex justify-between mb-2 items-center">
+                                <span class="text-sm">Life Leads (180)</span>
+                                <span class="text-xs">£75,850</span>
+                            </div>
+                            <span class=" block w-full rounded-full h-2 bg-gray-50 overflow-hidden">
+                                <span class="block rounded-full h-full bg-green-400" style="width: 70%"></span>
+                            </span>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2 items-center">
+                                <span class="text-sm">Cheap Leads (40)</span>
+                                <span class="text-xs">£9,250</span>
+                            </div>
+                            <span class=" block w-full rounded-full h-2 bg-gray-50 overflow-hidden">
+                                <span class="block rounded-full h-full bg-green-400" style="width: 30%"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-4/12 bg-white rounded-lg flex flex-col justify-between text-gray-600 border-2 border-blue-200 p-4">
+                    <h4 class="py-2 border-b mb-4 border-blue-200 font-bold">
+                        Employee target
+                    </h4>
+                    <div class="mb-3 flex items-center">
+                        <figure class="avatar--placeholder">
+                            c b
+                        </figure>
+                        <div class="flex-grow ml-3">
+                            <div class="flex justify-between mb-1 items-center">
+                                <span class="text-sm">Caitlyn Bannister
+                                </span>
+                                <span class="text-xs">80%</span>
+                            </div>
+                            <span class=" block w-full rounded-full h-2 bg-gray-50 overflow-hidden">
+                                <span class="block rounded-full h-full bg-green-400" style="width: 80%"></span>
+                            </span>
+                            <div class="text-sm font-bold mt-1">
+                                £6,860/£8,000
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 flex items-center">
+                        <img src="https://wallpaperaccess.com/full/2213424.jpg" class="avatar" alt="Profile image">
+                        <div class="flex-grow ml-3">
+                            <div class="flex justify-between mb-1 items-center">
+                                <span class="text-sm">Merylin Burn</span>
+                                <span class="text-xs">90%</span>
+                            </div>
+                            <span class=" block w-full rounded-full h-2 bg-gray-50 overflow-hidden">
+                                <span class="block rounded-full h-full bg-green-400" style="width: 90%"></span>
+                            </span>
+                            <div class="text-sm font-bold mt-1">
+                                £14,000/£15,000
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 flex items-center">
+                        <img src="https://wallpaperaccess.com/full/2213424.jpg" class="avatar" alt="Profile image">
+                        <div class="flex-grow ml-3">
+                            <div class="flex justify-between mb-1 items-center">
+                                <span class="text-sm">Ricardo Potta</span>
+                                <span class="text-xs">10%</span>
+                            </div>
+                            <span class=" block w-full rounded-full h-2 bg-gray-50 overflow-hidden">
+                                <span class="block rounded-full h-full bg-red-500" style="width: 10%"></span>
+                            </span>
+                            <div class="text-sm font-bold mt-1">
+                                £8,000/£42,000
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 flex items-center">
+                        <img src="https://wallpaperaccess.com/full/2213424.jpg" class="avatar" alt="Profile image">
+                        <div class="flex-grow ml-3">
+                            <div class="flex justify-between mb-1 items-center">
+                                <span class="text-sm">Zaina Blundel</span>
+                                <span class="text-xs">50%</span>
+                            </div>
+                            <span class=" block w-full rounded-full h-2 bg-gray-50 overflow-hidden">
+                                <span class="block rounded-full h-full bg-blue-500" style="width: 50%"></span>
+                            </span>
+                            <div class="text-sm font-bold mt-1">
+                                £24,000/£48,000
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 flex items-center">
+                        <img src="https://wallpaperaccess.com/full/2213424.jpg" class="avatar" alt="Profile image">
+                        <div class="flex-grow ml-3">
+                            <div class="flex justify-between mb-1 items-center">
+                                <span class="text-sm">Raymond Pennington
+                                </span>
+                                <span class="text-xs">13%</span>
+                            </div>
+                            <span class=" block w-full rounded-full h-2 bg-gray-50 overflow-hidden">
+                                <span class="block rounded-full h-full bg-red-500" style="width: 13%"></span>
+                            </span>
+                            <div class="text-sm font-bold mt-1">
+                                £14,000/£65,000
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 flex items-center">
+                        <img src="https://wallpaperaccess.com/full/2213424.jpg" class="avatar" alt="Profile image">
+                        <div class="flex-grow ml-3">
+                            <div class="flex justify-between mb-1 items-center">
+                                <span class="text-sm">Amelia Rose O'Connor</span>
+                                <span class="text-xs">92%</span>
+                            </div>
+                            <span class=" block w-full rounded-full h-2 bg-gray-50 overflow-hidden">
+                                <span class="block rounded-full h-full bg-green-400" style="width: 92%"></span>
+                            </span>
+                            <div class="text-sm font-bold mt-1">
+                                £119,000/£125,000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="m-4 flex items-stretch">
+                <div class="w-6/12 mr-4">
+                    <div class="pb-2 flex justify-between items-center">
+                        <h2 class="text-lg font-bold text-blue-800">
+                            Converted Leads
+                        </h2>
+                        <a href="#"
+                            class="rounded-md mr-3 bg-transparent text-sm hover:text-blue-700 text-blue-500 py-2 font-bold flex items-center">
+                            <span class="mr-2">View all</span>
+                            <i class="iconly-Arrow-Right text-2xl icli"></i>
+                        </a>
+                    </div>
+                    <table class="table auto overflow-x-auto w-full">
+                        <thead class="text-gray-600">
+                            <tr class="bg-white border rounded-lg text-sm border-gray-300">
+                                <th class="">
+
+                                </th>
+                                <th class="py-5 px-2 cursor-pointer w-3/12 text-left">
+                                    Lead name
+                                </th>
+                                <th class="py-5 px-2 cursor-pointer w-3/12 text-left">
+                                    Lead owner
+                                </th>
+                                <th class="py-5 px-2 cursor-pointer w-3/12 text-left">
+                                    Value
+                                </th>
+                                <th class="py-5 px-2 cursor-pointer w-3/12 text-left">
+                                    Created
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b text-sm border-gray-300 text-gray-600">
+                                <td>
+                                    <figure class="avatar--placeholder">
+                                        c b
+                                    </figure>
+                                </td>
+                                <td class="py-5 px-2">
+                                    <a href="" class="hover:text-blue-500 hover:underline">
+                                        Dental reminder
+                                    </a>
+                                </td>
+                                <td class="py-5 px-2">
+                                    Caitlyn Bannister
+                                </td>
+                                <td class="py-5 font-bold px-2">
+                                    £684.24150
+                                </td>
+                                <td class="py-5 px-2">
+                                    17 Jul, 2020
+                                </td>
+                            </tr>
+                            <tr class="border-b text-sm border-gray-300 text-gray-600">
+                                <td>
+                                    <figure class="avatar--placeholder">
+                                        c b
+                                    </figure>
+                                </td>
+                                <td class="py-5 px-2">
+                                    <a href="" class="hover:text-blue-500 hover:underline">
+                                        Dental reminder
+                                    </a>
+                                </td>
+                                <td class="py-5 px-2">
+                                    Caitlyn Bannister
+                                </td>
+                                <td class="py-5 font-bold px-2">
+                                    £684.24150
+                                </td>
+                                <td class="py-5 px-2">
+                                    17 Jul, 2020
+                                </td>
+                            </tr>
+                            <tr class="border-b text-sm border-gray-300 text-gray-600">
+                                <td>
+                                    <figure class="avatar--placeholder">
+                                        c b
+                                    </figure>
+                                </td>
+                                <td class="py-5 px-2">
+                                    <a href="" class="hover:text-blue-500 hover:underline">
+                                        Dental reminder
+                                    </a>
+                                </td>
+                                <td class="py-5 px-2">
+                                    Caitlyn Bannister
+                                </td>
+                                <td class="py-5 font-bold px-2">
+                                    £684.24150
+                                </td>
+                                <td class="py-5 px-2">
+                                    17 Jul, 2020
+                                </td>
+                            </tr>
+                            <tr class="border-b text-sm border-gray-300 text-gray-600">
+                                <td>
+                                    <figure class="avatar--placeholder">
+                                        c b
+                                    </figure>
+                                </td>
+                                <td class="py-5 px-2">
+                                    <a href="" class="hover:text-blue-500 hover:underline">
+                                        Amelia Rose O'Connor
+                                    </a>
+                                </td>
+                                <td class="py-5 px-2">
+                                    Raymond Pennington
+                                </td>
+                                <td class="py-5 font-bold px-2">
+                                    £684.24150
+                                </td>
+                                <td class="py-5 px-2">
+                                    17 Jul, 2020
+                                </td>
+                            </tr>
+                            <tr class="border-b text-sm border-gray-300 text-gray-600">
+                                <td>
+                                    <img src="https://wallpaperaccess.com/full/2213424.jpg" class="avatar"
+                                        alt="Profile image">
+                                </td>
+                                <td class="py-5 px-2">
+                                    <a href="" class="hover:text-blue-500 hover:underline">
+                                        Bryan Fowler
+                                    </a>
+                                </td>
+                                <td class="py-5 px-2">
+                                    Caitlyn Bannister
+                                </td>
+                                <td class="py-5 font-bold px-2">
+                                    £659.00
+                                </td>
+                                <td class="py-5 px-2">
+                                    04 May, 2021
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="w-6/12">
+                    <div class="pb-2 flex justify-between items-center">
+                        <h2 class="text-lg font-bold text-blue-800">
+                            Lost Leads
+                        </h2>
+                        <a href="#"
+                            class="rounded-md mr-3 bg-transparent text-sm hover:text-blue-700 text-blue-500 py-2 font-bold flex items-center">
+                            <span class="mr-2">View all</span>
+                            <i class="iconly-Arrow-Right text-2xl icli"></i>
+                        </a>
+                    </div>
+                    <table class="table auto overflow-x-auto w-full">
+                        <thead class="text-gray-600">
+                            <tr class="bg-white border rounded-lg text-sm border-gray-300">
+                                <th class="">
+
+                                </th>
+                                <th class="py-5 px-2 cursor-pointer w-3/12 text-left">
+                                    Lead name
+                                </th>
+                                <th class="py-5 px-2 cursor-pointer w-3/12 text-left">
+                                    Lead owner
+                                </th>
+                                <th class="py-5 px-2 cursor-pointer w-3/12 text-left">
+                                    Value
+                                </th>
+                                <th class="py-5 px-2 cursor-pointer w-3/12 text-left">
+                                    Created
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b text-sm border-gray-300 text-gray-600">
+                                <td>
+                                    <figure class="avatar--placeholder">
+                                        c b
+                                    </figure>
+                                </td>
+                                <td class="py-5 px-2">
+                                    <a href="" class="hover:text-blue-500 hover:underline">
+                                        Dental reminder
+                                    </a>
+                                </td>
+                                <td class="py-5 px-2">
+                                    Caitlyn Bannister
+                                </td>
+                                <td class="py-5 font-bold px-2">
+                                    £684.24150
+                                </td>
+                                <td class="py-5 px-2">
+                                    17 Jul, 2020
+                                </td>
+                            </tr>
+                            <tr class="border-b text-sm border-gray-300 text-gray-600">
+                                <td>
+                                    <figure class="avatar--placeholder">
+                                        c b
+                                    </figure>
+                                </td>
+                                <td class="py-5 px-2">
+                                    <a href="" class="hover:text-blue-500 hover:underline">
+                                        Dental reminder
+                                    </a>
+                                </td>
+                                <td class="py-5 px-2">
+                                    Caitlyn Bannister
+                                </td>
+                                <td class="py-5 font-bold px-2">
+                                    £684.24150
+                                </td>
+                                <td class="py-5 px-2">
+                                    17 Jul, 2020
+                                </td>
+                            </tr>
+                            <tr class="border-b text-sm border-gray-300 text-gray-600">
+                                <td>
+                                    <figure class="avatar--placeholder">
+                                        c b
+                                    </figure>
+                                </td>
+                                <td class="py-5 px-2">
+                                    <a href="" class="hover:text-blue-500 hover:underline">
+                                        Dental reminder
+                                    </a>
+                                </td>
+                                <td class="py-5 px-2">
+                                    Caitlyn Bannister
+                                </td>
+                                <td class="py-5 font-bold px-2">
+                                    £684.24150
+                                </td>
+                                <td class="py-5 px-2">
+                                    17 Jul, 2020
+                                </td>
+                            </tr>
+                            <tr class="border-b text-sm border-gray-300 text-gray-600">
+                                <td>
+                                    <figure class="avatar--placeholder">
+                                        c b
+                                    </figure>
+                                </td>
+                                <td class="py-5 px-2">
+                                    <a href="" class="hover:text-blue-500 hover:underline">
+                                        Amelia Rose O'Connor
+                                    </a>
+                                </td>
+                                <td class="py-5 px-2">
+                                    Raymond Pennington
+                                </td>
+                                <td class="py-5 font-bold px-2">
+                                    £684.24150
+                                </td>
+                                <td class="py-5 px-2">
+                                    17 Jul, 2020
+                                </td>
+                            </tr>
+                            <tr class="border-b text-sm border-gray-300 text-gray-600">
+                                <td>
+                                    <img src="https://wallpaperaccess.com/full/2213424.jpg" class="avatar"
+                                        alt="Profile image">
+                                </td>
+                                <td class="py-5 px-2">
+                                    <a href="" class="hover:text-blue-500 hover:underline">
+                                        Bryan Fowler
+                                    </a>
+                                </td>
+                                <td class="py-5 px-2">
+                                    Caitlyn Bannister
+                                </td>
+                                <td class="py-5 font-bold px-2">
+                                    £659.00
+                                </td>
+                                <td class="py-5 px-2">
+                                    04 May, 2021
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <!-- main body end -->
+        </main>
+    </div>
+
+</body>
+<script src="./dist/js/app.js"></script>
+
+</html>
