@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/font/icomoon/style.css">
+    <link rel="stylesheet" href="./dist/font/icony/dist/css/style.css">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>Client Profile::Documents</title>
+</head>
+
+<body class="bg-blue-100 font-sans">
+    <!-- modal background start -->
+    <div class="modal-background">
+        <div class="modal-lg bg-gray-50">
+            <div class="modal-head">
+                <div class="flex justify-between items-center w-3/12 mr-4">
+                    <h6 class="text-lg font-bold text-blue-500">Add scheduling</h6>
+                    <button
+                        class="rounded-md border-2 border-blue-600 bg-blue-600 text-white px-4 py-2 text-sm font-bold flex items-center hover:bg-blue-800">
+                        Edit profile
+                    </button>
+                </div>
+                <div class="flex-grow flex items-center justify-between">
+                    <div class="flex items-center">
+                        <a href="#" class="rounded-md text-gray-600 px-4 py-2 mr-1 text-sm font-bold flex items-center">
+                            Home
+                        </a>
+                        <a href="#"
+                            class="rounded-md shadow-md mr-1 bg-white text-blue-600 px-4 py-2 text-sm font-bold flex items-center hover:bg-gray-100">
+                            Details
+                        </a>
+                        <a href="#" class="rounded-md text-gray-600 px-4 py-2 text-sm font-bold flex items-center">
+                            Custom
+                        </a>
+                    </div>
+                    <button id="close_modal" class="text-xl text-gray-500 hover:text-red-500">
+                        <i class="iconly-Close-Square icbo"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body flex text-gray-600">
+                <div class="mr-4 mt-2 w-3/12">
+                    <div class="mb-5 border-b-2 pb-4">
+                        <img src="https://wallpaperaccess.com/full/2213424.jpg"
+                            class="avatar avatar-md block mx-auto mb-5" alt="">
+                        <p class="text-center text-blue-600 font-bold">Amelia Rose O'Connor
+                        </p>
+                    </div>
+                    <div class="mb-5 border-b-2 pb-4">
+                        <p class="text-md text-green-500 text-center mb-4">
+                            Quick actions
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="" class="flex flex-col items-center text-gray-600 text-sm hover:text-blue-500">
+                                <i class="iconly-Tick-Square icli text-2xl"></i>
+                                <span class="block mt-2">Task</span>
+                            </a>
+                            <a href="" class="flex flex-col items-center text-gray-600 text-sm hover:text-blue-500">
+                                <i class="iconly-Document icli text-2xl"></i>
+                                <span class="block mt-2">Invoice</span>
+                            </a>
+                            <a href="" class="flex flex-col items-center text-gray-600 text-sm hover:text-blue-500">
+                                <span class="icon-packages text-2xl"></span>
+                                <span class="block mt-2">Note</span>
+                            </a>
+                            <a href="" class="flex flex-col items-center text-gray-600 text-sm hover:text-blue-500">
+                                <i class="iconly-Calendar icli text-2xl"></i>
+                                <span class="block mt-2">Appt</span>
+                            </a>
+                            <a href="" class="flex flex-col items-center text-gray-600 text-sm hover:text-blue-500">
+                                <span class="icon-fields text-2xl"></span>
+                                <span class="block mt-2">Form</span>
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <p class="font-bold text-sm"><span class="text-red-600">!</span> Alert</p>
+                            <div class="border-2 border-gray-400 bg-gray-200 mt-1 rounded-md p-2 text-gray-600">This
+                                lady has 10 cats</div>
+                        </div>
+                    </div>
+                    <div class="mb-5 border-b-2 pb-4 text-gray-600">
+                        <div class="mb-4">
+                            <h6 class="text-md font-bold">Gender</h6>
+                            <span class="block">Female</span>
+                        </div>
+                        <div class="mb-4">
+                            <h6 class="text-md font-bold">Date of birth</h6>
+                            <span class="block">02 Jan, 1978</span>
+                        </div>
+                        <div class="mb-4">
+                            <h6 class="text-md font-bold">Email</h6>
+                            <span class="block">rose_amelia@outlook.com</span>
+                        </div>
+                        <div>
+                            <h6 class="text-md font-bold">Phone number</h6>
+                            <span class="block">+13 12 345 5455</span>
+                        </div>
+                    </div>
+                    <div class="pb-4 text-gray-600">
+                        <div>
+                            <h6 class="text-md font-bold">Social</h6>
+                            <div class="mt-1 flex items-center justify-between">
+                                <a href="#" class="w-10">
+                                    <img src="./dist/img/social/Facebook.svg" class="w-full h-auto" alt="">
+                                </a>
+                                <a href="#" class="w-10">
+                                    <img src="./dist/img/social/LinkedIN.svg" class="w-full h-auto" alt="">
+                                </a>
+                                <a href="#" class="w-10">
+                                    <img src="./dist/img/social/Instagram.svg" class="w-full h-auto" alt="">
+                                </a>
+                                <a href="#" class="w-10">
+                                    <img src="./dist/img/social/Twitter.svg" class="w-full h-auto" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-grow mt-2 border-2 border-blue-200 rounded-lg bg-white shadow-md">
+                    <div class="tab-container justify-between border-b text-xs">
+                        <a href="#" class="tab mr-4">
+                            <span>Appts</span>
+                        </a>
+                        <a href="#" class="tab mr-4">
+                            <span>Events</span>
+                        </a>
+                        <a href="#" class="tab mr-4 ">
+                            <span>Communications</span>
+                        </a>
+                        <a href="#" class="tab mr-4">
+                            <span>Forms</span>
+                        </a>
+                        <a href="#" class="tab mr-4">
+                            <span>Financial</span>
+                        </a>
+                        <a href="#" class="tab mr-4">
+                            <span>Sales</span>
+                        </a>
+                        <a href="#" class="tab mr-4">
+                            <span>Automation</span>
+                        </a>
+                        <a href="#" class="tab mr-4">
+                            <span>Photos</span>
+                        </a>
+                        <a href="#" class="tab mr-4">
+                            <span>Surveys</span>
+                        </a>
+                        <a href="#" class="tab mr-4">
+                            <span>Notes</span>
+                        </a>
+                        <a href="#" class="tab active mr-4">
+                            <span>Documents</span>
+                        </a>
+                        <a href="#" class="tab">
+                            <span>Teeth treatments</span>
+                        </a>
+                    </div>
+                    <div class="p-3">
+                        <div class="flex items-center justify-end">
+                            <span class="text-sm text-gray-600 mr-1">
+                                Categories:
+                            </span>
+                            <div class= "w-32 mr-4">
+                                <select name="" class="form-input" id="">
+                                    <option value="">All</option>
+                                    <option value="">Documents</option>
+                                    <option value="">PDF's</option>
+                                    <option value="">2020's</option>
+                                    <option value="">2019's</option>
+                                    <option value="">Extra stuff</option>
+                                    <option value="">Shifts</option>
+                                </select>
+                            </div>
+                            <span class="text-sm text-gray-600 mr-1">
+                                Sort by:
+                            </span>
+                            <div class="w-32">
+                                <select name="" class="mr-4 form-input" id="">
+                                    <option value="">Name</option>
+                                    <option value="">Date</option>
+                                    <option value="">Size</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-4 gap-4 py-2">
+                            <a href="#" class="rounded-lg inline-block relative border-2 border-blue-200 overflow-hidden">
+                                <div class="absolute right-2 top-2">
+                                    <label class="block dropdown cursor-pointer" tabindex="0" for="tags_1">
+                                        <div class="flex flex-col bg-blue-50 border-2 border-blue-100 rounded-md p-2">
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                        </div>
+                                        <input type="checkbox" name="" class="hidden" id="tags_1">
+                                        <div class="dropdown-options right w-40 p-2">
+                                            <button class="flex items-center mb-2 text-gray-600 hover:text-blue-600">
+                                                <i class="iconly-Delete icli text-2xl"></i>
+                                                <span class="text-sm ml-2">Delete</span>
+                                            </button>
+                                            <button href="#" class="flex items-center text-gray-600 hover:text-blue-600">
+                                                <i class="iconly-Arrow-Right-3 icli text-2xl"></i>
+                                                <span class="text-sm ml-2">Send to portal</span>
+                                            </button>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="h-28 bg-blue-100 flex justify-center items-center w-full"">
+                                    <img src=" ./dist/img/icons/Vector.svg" class="w-14 h-auto" alt="xls">
+                                </div>
+                                <div class="w-full h-14 bg-white text-xs text-gray-600 p-3">
+                                    some_kind_of_excel.xls
+                                </div>
+                            </a>
+                            <a href="#" class="rounded-lg block relative border-2 border-blue-200 overflow-hidden">
+                                <div class="absolute right-2 top-2">
+                                    <label class="block dropdown cursor-pointer" tabindex="0" for="tags_2">
+                                        <div class="flex flex-col bg-blue-50 border-2 border-blue-100 rounded-md p-2">
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                        </div>
+                                        <input type="checkbox" name="" class="hidden" id="tags_2">
+                                        <div class="dropdown-options right w-40 p-2">
+                                            <button class="flex items-center mb-2 text-gray-600 hover:text-blue-600">
+                                                <i class="iconly-Delete icli text-2xl"></i>
+                                                <span class="text-sm ml-2">Delete</span>
+                                            </button>
+                                            <button href="#" class="flex items-center text-gray-600 hover:text-blue-600">
+                                                <i class="iconly-Arrow-Right-3 icli text-2xl"></i>
+                                                <span class="text-sm ml-2">Send to portal</span>
+                                            </button>
+                                        </div>
+                                    </label>
+                                </div>
+                                <img src="./dist/img/comms/Rectangle 510.png"
+                                    class="object-cover object-center h-28 w-full" alt="">
+                                <div class="w-full h-14 bg-white text-xs text-gray-600 p-3">
+                                    Austria_mountain.png
+                                </div>
+                            </a>
+                            <a href="#" class="block rounded-lg relative border-2 border-blue-200 overflow-hidden">
+                                <div class="absolute right-2 top-2">
+                                    <label class="block dropdown cursor-pointer" tabindex="0" for="tags_3">
+                                        <div class="flex flex-col bg-blue-50 border-2 border-blue-100 rounded-md p-2">
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                        </div>
+                                        <input type="checkbox" name="" class="hidden" id="tags_3">
+                                        <div class="dropdown-options right w-40 p-2">
+                                            <button class="flex items-center mb-2 text-gray-600 hover:text-blue-600">
+                                                <i class="iconly-Delete icli text-2xl"></i>
+                                                <span class="text-sm ml-2">Delete</span>
+                                            </button>
+                                            <button href="#" class="flex items-center text-gray-600 hover:text-blue-600">
+                                                <i class="iconly-Arrow-Right-3 icli text-2xl"></i>
+                                                <span class="text-sm ml-2">Send to portal</span>
+                                            </button>
+                                        </div>
+                                    </label>
+                                </div>
+                                <img src="./dist/img/comms/Rectangle 513.png"
+                                    class="object-cover object-center h-28 w-full" alt="">
+                                <div class="w-full h-14 bg-white text-xs text-gray-600 p-3">
+                                    Available number
+                                    formats.jpeg
+                                </div>
+                            </a>
+                            <a href="#" class="rounded-lg inline-block relative border-2 border-blue-200 overflow-hidden">
+                                <div class="absolute right-2 top-2">
+                                    <label class="block dropdown cursor-pointer" tabindex="0" for="tags_4">
+                                        <div class="flex flex-col bg-blue-50 border-2 border-blue-100 rounded-md p-2">
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                        </div>
+                                        <input type="checkbox" name="" class="hidden" id="tags_4">
+                                        <div class="dropdown-options right w-40 p-2">
+                                            <button class="flex items-center mb-2 text-gray-600 hover:text-blue-600">
+                                                <i class="iconly-Delete icli text-2xl"></i>
+                                                <span class="text-sm ml-2">Delete</span>
+                                            </button>
+                                            <button href="#" class="flex items-center text-gray-600 hover:text-blue-600">
+                                                <i class="iconly-Arrow-Right-3 icli text-2xl"></i>
+                                                <span class="text-sm ml-2">Send to portal</span>
+                                            </button>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="h-28 bg-blue-100 flex justify-center items-center w-full"">
+                                    <img src=" ./dist/img/icons/Vector.svg" class="w-14 h-auto" alt="xls">
+                                </div>
+                                <div class="w-full h-14 bg-white text-xs text-gray-600 p-3">
+                                    some_kind_of_excel.xls
+                                </div>
+                            </a>
+                            <a href="#" class="rounded-lg inline-block relative border-2 border-blue-200 overflow-hidden">
+                                <div class="absolute right-2 top-2">
+                                    <label class="block dropdown cursor-pointer" tabindex="0" for="tags_5">
+                                        <div class="flex flex-col bg-blue-50 border-2 border-blue-100 rounded-md p-2">
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                        </div>
+                                        <input type="checkbox" name="" class="hidden" id="tags_5">
+                                        <div class="dropdown-options right w-40 p-2">
+                                            <button class="flex items-center mb-2 text-gray-600 hover:text-blue-600">
+                                                <i class="iconly-Delete icli text-2xl"></i>
+                                                <span class="text-sm ml-2">Delete</span>
+                                            </button>
+                                            <button href="#" class="flex items-center text-gray-600 hover:text-blue-600">
+                                                <i class="iconly-Arrow-Right-3 icli text-2xl"></i>
+                                                <span class="text-sm ml-2">Send to portal</span>
+                                            </button>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="h-28 bg-blue-100 flex justify-center items-center w-full"">
+                                    <img src="./dist/img/icons/Image.svg" class="w-14 h-auto" alt="xls">
+                                </div>
+                                <div class="w-full h-14 bg-white text-xs text-gray-600 p-3">
+                                    wallpaper_green_desktop_1920x1080px_unsplash...
+                                </div>
+                            </a>
+                            <a href="#" class="rounded-lg inline-block relative border-2 border-blue-200 overflow-hidden">
+                                <div class="absolute right-2 top-2">
+                                    <label class="block dropdown cursor-pointer" tabindex="0" for="tags_6">
+                                        <div class="flex flex-col bg-blue-50 border-2 border-blue-100 rounded-md p-2">
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                            <span class=" w-1 h-1 rounded-full bg-blue-500 block mb-1"></span>
+                                        </div>
+                                        <input type="checkbox" name="" class="hidden" id="tags_6">
+                                        <div class="dropdown-options right w-40 p-2">
+                                            <button class="flex items-center mb-2 text-gray-600 hover:text-blue-600">
+                                                <i class="iconly-Delete icli text-2xl"></i>
+                                                <span class="text-sm ml-2">Delete</span>
+                                            </button>
+                                            <button href="#" class="flex items-center text-gray-600 hover:text-blue-600">
+                                                <i class="iconly-Arrow-Right-3 icli text-2xl"></i>
+                                                <span class="text-sm ml-2">Send to portal</span>
+                                            </button>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="h-28 bg-blue-100 flex justify-center items-center w-full"">
+                                    <img src="./dist/img/icons/Document.svg" class="w-14 h-auto" alt="xls">
+                                </div>
+                                <div class="w-full h-14 bg-white text-xs text-gray-600 p-3">
+                                    wallpaper_green_desktop_1920x1080px_unsplash...
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal background end -->
+</body>
+
+</html>
